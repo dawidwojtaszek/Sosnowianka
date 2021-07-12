@@ -1,0 +1,30 @@
+.menu-element{
+    padding:.8rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+   
+}
+.menu-element a{
+    color:white;
+    
+    
+}
+.menu-element a:hover{
+    color:#16A17C;
+}
+.links-group{
+    font-size: 1rem;
+    
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.teams{
+    font-weight: 400;
+    list-style: none;
+}
+.inactive-element{
+    color:#c7c2c2;
+}

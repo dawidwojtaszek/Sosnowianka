@@ -598,6 +598,7 @@ pre tt:after {
 
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
 
 *{
@@ -611,7 +612,13 @@ body{
   background-color: #EBEBEB;
 }
 .container{
-  max-width: 1360px;
+  max-width: 1366px;
   margin:auto;
-  padding:1rem;
+  padding:0 2rem;
+}
+
+@media (max-width: 991.98px) { 
+  .container{
+    padding:0 0.5rem;
+  }
 }

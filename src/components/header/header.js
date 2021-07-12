@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import './header.style.css'
 import logo from "../../images/sosnowiankaLogo.png"
+import MobileMenu from "../mobile-menu/mobileMenu"
 
 const Header = ({ siteTitle }) => (
   <header>
@@ -18,9 +19,32 @@ const Header = ({ siteTitle }) => (
           </div>
         </div>
       </Link>
-
+      {/* <div className="hamburger"><input type="checkbox" id="hamburger" /><label for="hamburger"><i class="fas fa-bars"></i></label></div> */}
+      <MobileMenu className="mobile-menu"></MobileMenu>
       <div className="navigation">
+        <div className="social-icons">
+          <Link to="#"><i className="fab fa-twitter-square"></i></Link>
+          <Link to="#"><i className="fab fa-instagram"></i></Link>
+          <Link to="#"><i className="fab fa-facebook-square"></i></Link>
+        </div>
 
+        <nav>
+          <ul>
+            <li className="navigation-link">
+              <Link to="/">Strona Główna</Link>
+            </li>
+            <li className="navigation-link dropdown">
+              <button className="navigation-button"><Link to="/">Drużyny <i className="fas fa-chevron-down"></i></Link></button>
+              <div className="dropdown-list">
+                <Link to="/">Seniorzy</Link>
+                <Link to="/">Żaki</Link>
+              </div>
+            </li>
+            <li className="navigation-link">
+              <Link to="/">Kontakt</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
 
 
