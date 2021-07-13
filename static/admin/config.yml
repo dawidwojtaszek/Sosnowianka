@@ -17,3 +17,27 @@ collections:
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
+  -name: "nextGame"
+    label: "nextGame"
+    folder: "content/featuredGames/nextGame"
+    fields:
+      - {label: "Gospodarz", name: "home", widget: "string"} 
+      - {label: "Logo Gospodarz", name: "homeLogo", widget: "image"} 
+      - {label: "Wynik", name: "result", widget: "string"} 
+      - {label: "Logo Goscie", name: "awayLogo", widget: "image"} 
+      - {label: "Goscie", name: "away", widget: "string"} 
+      - {label: "Data", name: "date", widget: "date"} 
+      - {label: "Godzina", name: "time", widget: "string"} 
+      - {label: "Miejsce", name: "place", widget: "string"} 
+  -name: "previousGame"
+    label: "previousGame"
+    folder: "content/featuredGames/previousGame"
+    fields:
+      - {label: "Gospodarz", name: "home", widget: "string"} 
+      - {label: "Logo Gospodarz", name: "homeLogo", widget: "image"} 
+      - {label: "Wynik", name: "result", widget: "string"} 
+      - {label: "Logo Goscie", name: "awayLogo", widget: "image"} 
+      - {label: "Goscie", name: "away", widget: "string"} 
+      - {label: "Data", name: "date", widget: "date"} 
+      - {label: "Godzina", name: "time", widget: "string"} 
+      - {label: "Miejsce", name: "place", widget: "string"} 

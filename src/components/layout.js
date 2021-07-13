@@ -15,17 +15,18 @@ import "./layout.css"
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title,
-        }
-      }
+  site {
+    siteMetadata {
+      title
+      subtitle
     }
+  }
+}
   `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} siteSubTitle={data.site.siteMetadata.subtitle} />
       <div
         style={{
           margin: `0 auto`,

@@ -5,7 +5,7 @@ import './header.style.css'
 import logo from "../../images/sosnowiankaLogo.png"
 import MobileMenu from "../mobile-menu/mobileMenu"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, siteSubTitle }) => (
   <header>
     <div className="container header-container">
       <Link to="/">
@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
 
           <div className="site-name">
             <h1>{siteTitle}</h1>
-            <h2>Stanisław Dolny</h2>
+            <h2>{siteSubTitle}</h2>
           </div>
         </div>
       </Link>
