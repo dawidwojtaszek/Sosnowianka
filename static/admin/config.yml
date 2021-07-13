@@ -17,7 +17,7 @@ collections:
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
-  -name: "nextGame"
+  - name: "nextGame"
     label: "nextGame"
     folder: "content/featuredGames/nextGame"
     fields:
@@ -29,7 +29,7 @@ collections:
       - {label: "Data", name: "date", widget: "date"} 
       - {label: "Godzina", name: "time", widget: "string"} 
       - {label: "Miejsce", name: "place", widget: "string"} 
-  -name: "previousGame"
+  - name: "previousGame"
     label: "previousGame"
     folder: "content/featuredGames/previousGame"
     fields:
