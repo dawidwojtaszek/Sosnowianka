@@ -11,11 +11,9 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Seo title="Strona Główna" />
-      <h1>Hi people</h1>
-      <p></p>
-      <p></p>
       <FeaturedGames gameData={featuredGames} />
-      <StaticImage
+
+      {/* <StaticImage
         src="../images/gatsby-astronaut.png"
         width={300}
         quality={95}
@@ -26,7 +24,7 @@ const IndexPage = ({ data }) => {
       <p>
         <Link to="/page-2/">Go to page 2</Link> <br />
         <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-      </p>
+      </p> */}
     </Layout>
   )
 }
@@ -43,19 +41,19 @@ query featuredGames {
       dateP
       homeLogoN
       homeLogoP
-      homeN
       homeP
+      homeN
+      leagueN
+      leagueP
       placeN
       placeP
       resultN
       resultP
-      timeN
       timeP
+      timeN
     }
   }
 }
-
-
 `
 
 export default IndexPage

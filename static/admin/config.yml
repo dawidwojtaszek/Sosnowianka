@@ -26,7 +26,8 @@ collections:
       - {label: "Wynik Nastepny Mecz", name: "resultN", widget: "string"} 
       - {label: "Logo Goscie Nastepny Mecz", name: "awayLogoN", widget: "image"} 
       - {label: "Goscie Nastepny Mecz", name: "awayN", widget: "string"} 
-      - {label: "Data Nastepny Mecz", name: "dateN", widget: "date"} 
+      - {label: "Rozgrywki Następny Mecz", name: "leagueN", widget: "string"} 
+      - {label: "Data Nastepny Mecz", name: "dateN", widget: "string"} 
       - {label: "Godzina Nastepny Mecz", name: "timeN", widget: "string"} 
       - {label: "Miejsce Nastepny Mecz", name: "placeN", widget: "string"} 
       - {label: "Gospodarz Poprzedni Mecz", name: "homeP", widget: "string"} 
@@ -34,7 +35,8 @@ collections:
       - {label: "Wynik Poprzedni Mecz", name: "resultP", widget: "string"} 
       - {label: "Logo Goscie Poprzedni Mecz", name: "awayLogoP", widget: "image"} 
       - {label: "Goscie Poprzedni Mecz", name: "awayP", widget: "string"} 
-      - {label: "Data Poprzedni Mecz", name: "dateP", widget: "date"} 
+      - {label: "Rozgrywki Poprzedni Mecz", name: "leagueP", widget: "string"}
+      - {label: "Data Poprzedni Mecz", name: "dateP", widget: "string"} 
       - {label: "Godzina Poprzedni Mecz", name: "timeP", widget: "string"} 
       - {label: "Miejsce Poprzedni Mecz", name: "placeP", widget: "string"} 
 
