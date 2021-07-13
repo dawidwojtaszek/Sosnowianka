@@ -3,19 +3,18 @@ import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-
+import FeaturedGames from "../components/featuredGames/featuredGames"
 
 const IndexPage = ({ data }) => {
 
-  const featuredGames = data.allMarkdownRemark.nodes
-  console.log(featuredGames[1]);
+  const featuredGames = data.markdownRemark.frontmatter;
   return (
     <Layout>
       <Seo title="Strona Główna" />
       <h1>Hi people</h1>
       <p></p>
       <p></p>
-      {/* <FeaturedGames previousGame={featuredGames[1]} nextGame={featuredGames[0]} /> */}
+      <FeaturedGames gameData={featuredGames} />
       <StaticImage
         src="../images/gatsby-astronaut.png"
         width={300}
@@ -32,24 +31,31 @@ const IndexPage = ({ data }) => {
   )
 }
 
-// export const query = graphql`
-// query featuredGames {
-//    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/featuredGames/"}}) {
-//     nodes {
-//       frontmatter {
-//         away
-//         aweyLogo
-//         date
-//         home
-//         homeLogo
-//         place
-//         result
-//         time
-//       }
-//     }
-//   }
-// }
+export const query = graphql`
+query featuredGames {
+  markdownRemark(fileAbsolutePath: {regex: "/featuredGames/"}) {
+    frontmatter {
+      awayLogoN
+      awayLogoP
+      awayN
+      awayP
+      dateN
+      dateP
+      homeLogoN
+      homeLogoP
+      homeN
+      homeP
+      placeN
+      placeP
+      resultN
+      resultP
+      timeN
+      timeP
+    }
+  }
+}
 
-// `
+
+`
 
 export default IndexPage
