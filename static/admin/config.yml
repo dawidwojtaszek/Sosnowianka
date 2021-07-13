@@ -17,27 +17,24 @@ collections:
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
-  -name: "nextGame"
-    label: "nextGame"
-    folder: "content/featuredGames/nextGame"
+  - name: "featuredGames"
+    label: "Featured Games"
+    folder: "content/featuredGames"
     fields:
-      - {label: "Gospodarz", name: "home", widget: "string"} 
-      - {label: "Logo Gospodarz", name: "homeLogo", widget: "image"} 
-      - {label: "Wynik", name: "result", widget: "string"} 
-      - {label: "Logo Goscie", name: "awayLogo", widget: "image"} 
-      - {label: "Goscie", name: "away", widget: "string"} 
-      - {label: "Data", name: "date", widget: "date"} 
-      - {label: "Godzina", name: "time", widget: "string"} 
-      - {label: "Miejsce", name: "place", widget: "string"} 
-  -name: "previousGame"
-    label: "previousGame"
-    folder: "content/featuredGames/previousGame"
-    fields:
-      - {label: "Gospodarz", name: "home", widget: "string"} 
-      - {label: "Logo Gospodarz", name: "homeLogo", widget: "image"} 
-      - {label: "Wynik", name: "result", widget: "string"} 
-      - {label: "Logo Goscie", name: "awayLogo", widget: "image"} 
-      - {label: "Goscie", name: "away", widget: "string"} 
-      - {label: "Data", name: "date", widget: "date"} 
-      - {label: "Godzina", name: "time", widget: "string"} 
-      - {label: "Miejsce", name: "place", widget: "string"} 
+      - {label: "Gospodarz Nastepny Mecz", name: "homeN", widget: "string"} 
+      - {label: "Logo Gospodarz Nastepny Mecz", name: "homeLogoN", widget: "image"} 
+      - {label: "Wynik Nastepny Mecz", name: "resultN", widget: "string"} 
+      - {label: "Logo Goscie Nastepny Mecz", name: "awayLogoN", widget: "image"} 
+      - {label: "Goscie Nastepny Mecz", name: "awayN", widget: "string"} 
+      - {label: "Data Nastepny Mecz", name: "dateN", widget: "date"} 
+      - {label: "Godzina Nastepny Mecz", name: "timeN", widget: "string"} 
+      - {label: "Miejsce Nastepny Mecz", name: "placeN", widget: "string"} 
+      - {label: "Gospodarz Poprzedni Mecz", name: "homeP", widget: "string"} 
+      - {label: "Logo Gospodarz Poprzedni Mecz", name: "homeLogoP", widget: "image"} 
+      - {label: "Wynik Poprzedni Mecz", name: "resultP", widget: "string"} 
+      - {label: "Logo Goscie Poprzedni Mecz", name: "awayLogoP", widget: "image"} 
+      - {label: "Goscie Poprzedni Mecz", name: "awayP", widget: "string"} 
+      - {label: "Data Poprzedni Mecz", name: "dateP", widget: "date"} 
+      - {label: "Godzina Poprzedni Mecz", name: "timeP", widget: "string"} 
+      - {label: "Miejsce Poprzedni Mecz", name: "placeP", widget: "string"} 
+
