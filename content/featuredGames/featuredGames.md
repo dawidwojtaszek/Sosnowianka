@@ -5,12 +5,12 @@ resultN: VS
 awayLogoN: src/images/uploads/kalwarianka.png
 awayN: Kalwarianka II
 leagueN: Puchar Polski
-dateN: 25.07.2021
-timeN: 17:00
+dateN: "'25.07.2021'"
+timeN: "'17:00'"
 placeN: Boisko Sosnowianki
 homeP: Sownowianka
 homeLogoP: src/images/uploads/sosnowiankaLogo.png
-resultP: 1:7
+resultP: "'1:7'"
 awayLogoP: src/images/uploads/osiek.jpg
 awayP: Brzezina Osiek
 leagueP: Klasa Okręgowa
