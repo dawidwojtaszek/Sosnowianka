@@ -7,13 +7,14 @@ import FeaturedGames from "../components/featuredGames/featuredGames"
 
 const IndexPage = ({ data }) => {
 
-  console.log(data.allMarkdownRemark.nodes.dateN);
+  console.log(data.allMarkdownRemark.nodes);
+  const featuredGames = data.allMarkdownRemark.nodes[0].frontmatter;
 
   return (
     <Layout>
       <Seo title="Strona Główna" />
 
-      {/* <FeaturedGames gameData={featuredGames} /> */}
+      <FeaturedGames gameData={featuredGames} />
 
       {/* <StaticImage
         src="../images/gatsby-astronaut.png"
@@ -33,30 +34,43 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
 query featuredGames {
- allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/featuredGames/"}}) {
+  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/featuredGames/"}}) {
     nodes {
-      featuredGames:frontmatter {
-        dateP
-        dateN
-        resultP
-        resultN
-        homeLogoP
-        awayP
-        awayN
-        awayLogoP
+      frontmatter {
+        awayLogoN {
+          childImageSharp {
+            gatsbyImageData(height: 55, placeholder: BLURRED)
+          }
+        }
+        awayLogoP {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, height: 55)
+          }
+        }
+        homeLogoN {
+          childImageSharp {
+            gatsbyImageData(height: 55, placeholder: BLURRED)
+          }
+        }
+        homeLogoP {
+          childImageSharp {
+            gatsbyImageData(height: 55, placeholder: BLURRED)
+          }
+        }
         homeN
         homeP
         leagueN
         leagueP
         placeN
         placeP
+        resultN
+        resultP
         timeN
         timeP
-        awayLogoN {
-          childrenImageSharp {
-            gatsbyImageData(placeholder: BLURRED, height: 55)
-          }
-        }
+        awayN
+        awayP
+        dateN
+        dateP
       }
     }
   }

@@ -75,7 +75,7 @@ const DividerSm = styled.div`
 
 
 const FeaturedGames = ({ gameData }) => {
-    const { homeN, awayLogoN, resultN, awayN, dateN, timeN, placeN, homeP, homeLogoP, resultP, awayLogoP, awayP, dateP, timeP, placeP, leagueN, leagueP } = gameData;
+    const { homeN, resultN, awayN, dateN, timeN, placeN, homeP, resultP, awayP, dateP, timeP, placeP, leagueN, leagueP } = gameData;
 
 
 
@@ -90,7 +90,7 @@ const FeaturedGames = ({ gameData }) => {
 
                     <Name>{resultN}</Name>
 
-                    <GatsbyImage image={getImage(awayLogoN)} alt="logo" />
+
                     <Name>{awayN}</Name>
                 </TeamsSection>
                 <GameInfoSection>
@@ -107,9 +107,9 @@ const FeaturedGames = ({ gameData }) => {
                 <LeagueName>{leagueP}</LeagueName>
                 <TeamsSection>
                     <Name>{homeP}</Name>
-                    <TeamLogo src={homeLogoP} />
+
                     <Name>{resultP}</Name>
-                    <TeamLogo src={awayLogoP} />
+
                     <Name>{awayP}</Name>
                 </TeamsSection>
                 <GameInfoSection>
