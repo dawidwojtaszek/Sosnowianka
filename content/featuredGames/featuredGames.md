@@ -1,20 +1,20 @@
 ---
 homeN: Sosnowianka
-homeLogoN: ../../src/images/sosnowianka.png
+homeLogoN: src/images/uploads/sosnowiankaLogo.png
 resultN: VS
-awayLogoN: ../../src/images/kalwarianka.png
+awayLogoN: src/images/uploads/kalwarianka.png
 awayN: Kalwarianka II
 leagueN: Puchar Polski
-dateN: '2021-07-25'
-timeN: '18:00'
-placeN: Stanisław Dolny
-homeP: Kalwarianka II
-homeLogoP: sosnowianka.png
-resultP: '2:0'
-awayLogoP: sosnowianka.png
-awayP: Sosnowianka
-leagueP: B Klasa
-dateP: '2021-07-12'
-timeP: '17:00'
-placeP: Sucha Bezkidzka
+dateN: 25.07.2021
+timeN: 17:00
+placeN: Boisko Sosnowianki
+homeP: Sownowianka
+homeLogoP: src/images/uploads/sosnowiankaLogo.png
+resultP: 1:7
+awayLogoP: src/images/uploads/osiek.jpg
+awayP: Brzezina Osiek
+leagueP: Klasa Okręgowa
+dateP: 2021-06-30
+timeP: 18:00
+placeP: Boisko Sosnowianki
 ---
