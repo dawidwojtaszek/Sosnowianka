@@ -1,16 +1,19 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import FeaturedGames from "../components/featuredGames/featuredGames"
 
 const IndexPage = ({ data }) => {
 
-  const featuredGames = data.markdownRemark.frontmatter;
+  console.log(data.allMarkdownRemark.nodes.dateN);
+
   return (
     <Layout>
       <Seo title="Strona Główna" />
-      <FeaturedGames gameData={featuredGames} />
+
+      {/* <FeaturedGames gameData={featuredGames} /> */}
 
       {/* <StaticImage
         src="../images/gatsby-astronaut.png"
@@ -30,26 +33,31 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
 query featuredGames {
-  markdownRemark(fileAbsolutePath: {regex: "/featuredGames/"}) {
-    frontmatter {
-      awayLogoN
-      awayLogoP
-      awayN
-      awayP
-      dateN
-      dateP
-      homeLogoN
-      homeLogoP
-      homeP
-      homeN
-      leagueN
-      leagueP
-      placeN
-      placeP
-      resultN
-      resultP
-      timeP
-      timeN
+ allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/featuredGames/"}}) {
+    nodes {
+      featuredGames:frontmatter {
+        dateP
+        dateN
+        resultP
+        resultN
+        homeLogoP
+        awayP
+        awayN
+        awayLogoP
+        homeN
+        homeP
+        leagueN
+        leagueP
+        placeN
+        placeP
+        timeN
+        timeP
+        awayLogoN {
+          childrenImageSharp {
+            gatsbyImageData(placeholder: BLURRED, height: 55)
+          }
+        }
+      }
     }
   }
 }

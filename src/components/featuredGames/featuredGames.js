@@ -1,6 +1,6 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image";
 import styled from 'styled-components';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const Card = styled.div`
     background-color: white;
@@ -73,8 +73,9 @@ const DividerSm = styled.div`
 `
 
 
+
 const FeaturedGames = ({ gameData }) => {
-    const { homeN, homeLogoN, resultN, awayLogoN, awayN, dateN, timeN, placeN, homeP, homeLogoP, resultP, awayLogoP, awayP, dateP, timeP, placeP, leagueN, leagueP } = gameData;
+    const { homeN, awayLogoN, resultN, awayN, dateN, timeN, placeN, homeP, homeLogoP, resultP, awayLogoP, awayP, dateP, timeP, placeP, leagueN, leagueP } = gameData;
 
 
 
@@ -85,10 +86,11 @@ const FeaturedGames = ({ gameData }) => {
                 <LeagueName>{leagueN}</LeagueName>
                 <TeamsSection>
                     <Name>{homeN}</Name>
-                    <TeamLogo src={homeLogoN} />
+
 
                     <Name>{resultN}</Name>
-                    <TeamLogo src={awayLogoN} />
+
+                    <GatsbyImage image={getImage(awayLogoN)} alt="logo" />
                     <Name>{awayN}</Name>
                 </TeamsSection>
                 <GameInfoSection>

@@ -44,6 +44,13 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify-cms-paths`,
+      options: {
+        // Path to your Netlify CMS config file
+        cmsConfig: `/static/admin/config.yml`
+      }
+    },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify-cms`,
