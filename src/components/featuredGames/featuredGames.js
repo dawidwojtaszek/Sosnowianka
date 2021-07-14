@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { StaticImage } from "gatsby-plugin-image";
 import styled from 'styled-components';
 
 const Card = styled.div`
@@ -86,6 +86,7 @@ const FeaturedGames = ({ gameData }) => {
                 <TeamsSection>
                     <Name>{homeN}</Name>
                     <TeamLogo src={homeLogoN} />
+
                     <Name>{resultN}</Name>
                     <TeamLogo src={awayLogoN} />
                     <Name>{awayN}</Name>

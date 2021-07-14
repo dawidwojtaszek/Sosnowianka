@@ -1,17 +1,17 @@
 ---
 homeN: Sosnowianka
-homeLogoN: /sosnowiankalogo.png
+homeLogoN: sosnowiankalogo.png
 resultN: 'VS'
-awayLogoN: /sosnowiankalogo.png
-awayN: Tempo Białka
+awayLogoN: kalwarianka.png
+awayN: Kalwarianka II
 leagueN: Puchar Polski
-dateN: '2021-07-12'
+dateN: '2021-07-25'
 timeN: '18:00'
 placeN: Stanisław Dolny
-homeP: Kalwarianka II
-homeLogoP: /sosnowiankalogo.png
-resultP: '2:0'
-awayLogoP: /sosnowiankalogo.png
+homeP: Sosnowianka
+homeLogoP: ../sosnowiankalogo.png
+resultP: '7:1'
+awayLogoP: ../sosnowiankalogo.png
 awayP: Sosnowianka
 leagueP: B Klasa
 dateP: '2021-07-12'
