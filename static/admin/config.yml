@@ -4,7 +4,7 @@ backend:
 
 # This line should *not* be indented
 media_folder: "src/images" # Media files will be stored in the repo under images/uploads
-public_folder: "src/images/uploads"
+public_folder: "src/images"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
@@ -28,7 +28,7 @@ collections:
       - {label: "Logo Goscie Nastepny Mecz", name: "awayLogoN", widget: "image"} 
       - {label: "Goscie Nastepny Mecz", name: "awayN", widget: "string"} 
       - {label: "Rozgrywki Następny Mecz", name: "leagueN", widget: "string"} 
-      - {label: "Data Nastepny Mecz", name: "dateN", widget: "string"} 
+      - {label: "Data Nastepny Mecz", name: "dateN", widget: "date"} 
       - {label: "Godzina Nastepny Mecz", name: "timeN", widget: "string"} 
       - {label: "Miejsce Nastepny Mecz", name: "placeN", widget: "string"} 
       - {label: "Gospodarz Poprzedni Mecz", name: "homeP", widget: "string"} 
@@ -37,7 +37,7 @@ collections:
       - {label: "Logo Goscie Poprzedni Mecz", name: "awayLogoP", widget: "image"} 
       - {label: "Goscie Poprzedni Mecz", name: "awayP", widget: "string"} 
       - {label: "Rozgrywki Poprzedni Mecz", name: "leagueP", widget: "string"}
-      - {label: "Data Poprzedni Mecz", name: "dateP", widget: "string"} 
+      - {label: "Data Poprzedni Mecz", name: "dateP", widget: "date"} 
       - {label: "Godzina Poprzedni Mecz", name: "timeP", widget: "string"} 
       - {label: "Miejsce Poprzedni Mecz", name: "placeP", widget: "string"} 
 

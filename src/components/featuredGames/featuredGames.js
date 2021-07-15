@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-
+import Img from 'gatsby-image';
 const Card = styled.div`
     background-color: white;
     border-radius: 7px;
@@ -76,9 +76,12 @@ const DividerSm = styled.div`
 
 const FeaturedGames = ({ gameData }) => {
     const { homeN, resultN, awayN, dateN, timeN, placeN, homeP, resultP, awayP, dateP, timeP, placeP, leagueN, leagueP } = gameData;
-
-
-
+    const homeLogoN = getImage(gameData.homeLogoN);
+    const awayLogoN = getImage(gameData.awayLogoN);
+    const homeLogoP = getImage(gameData.homeLogoP);
+    const awayLogoP = getImage(gameData.awayLogoP);
+    console.log('featuredGames');
+    console.log(homeLogoN);
     return (
         <Card>
             <GameContainer>
@@ -87,11 +90,12 @@ const FeaturedGames = ({ gameData }) => {
                 <TeamsSection>
                     <Name>{homeN}</Name>
 
-
+                    <GatsbyImage image={homeLogoN} alt="logo" />
                     <Name>{resultN}</Name>
-
-
+                    <GatsbyImage image={awayLogoN} alt="logo" />
                     <Name>{awayN}</Name>
+
+
                 </TeamsSection>
                 <GameInfoSection>
                     <InfoElement><i className="fas fa-calendar-alt"></i> {dateN}</InfoElement>
@@ -107,9 +111,9 @@ const FeaturedGames = ({ gameData }) => {
                 <LeagueName>{leagueP}</LeagueName>
                 <TeamsSection>
                     <Name>{homeP}</Name>
-
+                    <GatsbyImage image={homeLogoP} alt="logo" />
                     <Name>{resultP}</Name>
-
+                    <GatsbyImage image={awayLogoP} alt="logo" />
                     <Name>{awayP}</Name>
                 </TeamsSection>
                 <GameInfoSection>
