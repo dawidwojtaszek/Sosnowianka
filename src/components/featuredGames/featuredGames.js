@@ -15,46 +15,65 @@ const Card = styled.div`
      @media (max-width: 991.98px){
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+        padding:1rem;
     }
     `
 const GameContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width:49%;
-   
- 
+    width:100%;
+
 `
 const GameTitle = styled.h3`
     text-transform: uppercase;
     color: #616161;
     font-size: 1.1rem;
+      @media (max-width: 991.98px){
+        font-size: 0.9rem;
+    }
 `
 const LeagueName = styled.span`
     color:#16A17C;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
+      @media (max-width: 991.98px){
+        font-size: 0.9rem;
+    }
 `
 const TeamsSection = styled.div`
     display:grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: 4fr 1fr 1fr 1fr 4fr;
- 
+    max-width: 700px;
+    margin:auto;
+    @media (max-width: 500px){
+        grid-template-columns: 3fr 1fr 3fr
+    } 
 `
 const Name = styled.span`
     padding:0.5rem;
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    @media (max-width: 991.98px){
+        font-size: 0.9rem;
+    }
 `
 const GameInfoSection = styled.div`
     display: flex;
     justify-content:space-around;
-    margin-top: 0.7rem;
-    
+    margin:auto;
+    max-width: 600px;
 `
 const InfoElement = styled.div`
     text-transform: uppercase;
+    margin:0 1rem;
+       @media (max-width: 991.98px){
+        font-size: 0.8rem;
+    }
 `
 
 const Divider = styled.div`
@@ -74,6 +93,9 @@ const ImageContainer = styled.div`
     width:100%;
     display:flex;
     align-items: center;
+    @media (max-width: 500px){
+        display: none;
+    }
 `
 
 
@@ -98,10 +120,10 @@ const FeaturedGames = ({ gameData }) => {
                         <GatsbyImage image={homeLogoN} alt="logo" object-fit='scale-down' />
                     </ImageContainer>
                     <Name>{resultN}</Name>
-                    <GatsbyImage image={awayLogoN} alt="logo" object-fit='scale-down' />
+                    <ImageContainer>
+                        <GatsbyImage image={awayLogoN} alt="logo" object-fit='scale-down' />
+                    </ImageContainer>
                     <Name>{awayN}</Name>
-
-
                 </TeamsSection>
                 <GameInfoSection>
                     <InfoElement><i className="fas fa-calendar-alt"></i> {dateN}</InfoElement>
@@ -117,9 +139,13 @@ const FeaturedGames = ({ gameData }) => {
                 <LeagueName>{leagueP}</LeagueName>
                 <TeamsSection>
                     <Name>{homeP}</Name>
-                    <GatsbyImage image={homeLogoP} alt="logo" object-fit='scale-down' />
+                    <ImageContainer>
+                        <GatsbyImage image={homeLogoP} alt="logo" object-fit='scale-down' />
+                    </ImageContainer>
                     <Name>{resultP}</Name>
-                    <GatsbyImage image={awayLogoP} alt="logo" />
+                    <ImageContainer>
+                        <GatsbyImage image={awayLogoP} alt="logo" />
+                    </ImageContainer>
                     <Name>{awayP}</Name>
                 </TeamsSection>
                 <GameInfoSection>
