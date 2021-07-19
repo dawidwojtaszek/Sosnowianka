@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import Img from 'gatsby-image';
+
 const Card = styled.div`
     background-color: white;
     border-radius: 7px;
@@ -36,17 +36,16 @@ const LeagueName = styled.span`
 `
 const TeamsSection = styled.div`
     display:grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 4fr 1fr 1fr 1fr 4fr;
+ 
 `
 const Name = styled.span`
     padding:0.5rem;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 1.3rem;
-`
-const TeamLogo = styled.img`
-    height: 55px;
-    width: auto;
 `
 const GameInfoSection = styled.div`
     display: flex;
@@ -71,15 +70,21 @@ const DividerSm = styled.div`
     height: 20px;
     width: 0;
 `
+const ImageContainer = styled.div`
+    width:100%;
+    display:flex;
+    align-items: center;
+`
 
 
 
 const FeaturedGames = ({ gameData }) => {
-    const { homeN, resultN, awayN, dateN, timeN, placeN, homeP, resultP, awayP, dateP, timeP, placeP, leagueN, leagueP } = gameData;
+    const { homeN, resultN, awayN, timeN, dateN, placeN, homeP, resultP, awayP, dateP, timeP, placeP, leagueN, leagueP } = gameData;
     const homeLogoN = getImage(gameData.homeLogoN);
     const awayLogoN = getImage(gameData.awayLogoN);
     const homeLogoP = getImage(gameData.homeLogoP);
     const awayLogoP = getImage(gameData.awayLogoP);
+    console.log(typeof (dateN))
     console.log('featuredGames');
     console.log(homeLogoN);
     return (
@@ -89,10 +94,11 @@ const FeaturedGames = ({ gameData }) => {
                 <LeagueName>{leagueN}</LeagueName>
                 <TeamsSection>
                     <Name>{homeN}</Name>
-
-                    <GatsbyImage image={homeLogoN} alt="logo" />
+                    <ImageContainer>
+                        <GatsbyImage image={homeLogoN} alt="logo" object-fit='scale-down' />
+                    </ImageContainer>
                     <Name>{resultN}</Name>
-                    <GatsbyImage image={awayLogoN} alt="logo" />
+                    <GatsbyImage image={awayLogoN} alt="logo" object-fit='scale-down' />
                     <Name>{awayN}</Name>
 
 
@@ -111,7 +117,7 @@ const FeaturedGames = ({ gameData }) => {
                 <LeagueName>{leagueP}</LeagueName>
                 <TeamsSection>
                     <Name>{homeP}</Name>
-                    <GatsbyImage image={homeLogoP} alt="logo" />
+                    <GatsbyImage image={homeLogoP} alt="logo" object-fit='scale-down' />
                     <Name>{resultP}</Name>
                     <GatsbyImage image={awayLogoP} alt="logo" />
                     <Name>{awayP}</Name>
