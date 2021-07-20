@@ -10,8 +10,8 @@ timeN: '17:30'
 placeN: Boisko Sosnowianki
 homeP: Sownowianka
 homeLogoP: src/images/sosnowiankaLogo.png
-resultP: '1:7'
-awayLogoP: src/images/osiek.jpg
+resultP: '2:3'
+awayLogoP: src/images/brody.jpg
 awayP: Brzezina Osiek
 leagueP: Klasa Okręgowa
 dateP: '2021-06-30'
