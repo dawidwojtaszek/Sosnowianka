@@ -79,7 +79,7 @@ const InfoElement = styled.div`
         font-size: 0.9rem;
        }
        @media (max-width: 500px){
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 `
 

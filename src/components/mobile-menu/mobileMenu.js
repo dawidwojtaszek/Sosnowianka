@@ -47,7 +47,7 @@ const MobileMenu = () => {
                     <li className="menu-element"><Link to='/'>Strona Główna</Link></li>
                     <li className="menu-element inactive-element">Drużyny:
                         <ul>
-                            <li className="menu-element teams"><Link to='/'>Seniorzy</Link></li>
+                            <li className="menu-element teams"><Link to='/seniorzy'>Seniorzy</Link></li>
                             <li className="menu-element teams"><Link to='/'>Żaki</Link></li>
                         </ul>
                     </li >

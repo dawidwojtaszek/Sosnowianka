@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import ScheduleCard from '../schedule-card/schedule-card';
 
 const Card = styled.div`
     background-color: white;
@@ -14,6 +14,16 @@ const Card = styled.div`
         padding:1rem;
     }
     `
+const Container = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @media (max-width: 991.98px){
+        flex-direction: column;
+        align-items: center;
+    }
+`
 const SectionTitle = styled.h3`
     text-transform: uppercase;
     color: #616161;
@@ -28,6 +38,14 @@ const Schedule = () => {
     return (
         <Card>
             <SectionTitle>Terminarz jesień 2021/2022</SectionTitle>
+            <Container>
+                <ScheduleCard />
+                <ScheduleCard />
+                <ScheduleCard />
+                <ScheduleCard />
+                <ScheduleCard />
+                <ScheduleCard />
+            </Container>
         </Card>
     );
 }
