@@ -27,22 +27,22 @@ query featuredGames {
       frontmatter {
         awayLogoN {
           childImageSharp {
-            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: FIXED)
+            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: CONSTRAINED)
           }
         }
         awayLogoP {
           childImageSharp {
-            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: FIXED)
+            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: CONSTRAINED)
           }
         }
         homeLogoN {
           childImageSharp {
-            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: FIXED)
+            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: CONSTRAINED)
           }
         }
         homeLogoP {
           childImageSharp {
-            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: FIXED)
+            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: CONSTRAINED)
           }
         }
         homeN

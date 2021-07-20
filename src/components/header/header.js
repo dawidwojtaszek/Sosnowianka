@@ -36,7 +36,7 @@ const Header = ({ siteTitle, siteSubTitle }) => (
             <li className="navigation-link dropdown">
               <button className="navigation-button"><Link to="/">Drużyny <i className="fas fa-chevron-down"></i></Link></button>
               <div className="dropdown-list">
-                <Link to="/">Seniorzy</Link>
+                <Link to="/seniorzy">Seniorzy</Link>
                 <Link to="/">Żaki</Link>
               </div>
             </li>

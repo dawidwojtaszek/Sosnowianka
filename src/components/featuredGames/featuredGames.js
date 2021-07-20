@@ -50,7 +50,7 @@ const TeamsSection = styled.div`
     max-width: 700px;
     margin:auto;
     @media (max-width: 500px){
-        grid-template-columns: 3fr 1fr 3fr
+        grid-template-columns: 4fr 1fr 1fr 1fr 4fr
     } 
 `
 const Name = styled.span`
@@ -59,7 +59,10 @@ const Name = styled.span`
     font-weight: bolder;
     font-size: 1.2rem;
     @media (max-width: 991.98px){
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+    @media (max-width: 500px){
+        font-size: 0.7rem;
     }
 `
 const GameInfoSection = styled.div`
@@ -71,8 +74,12 @@ const GameInfoSection = styled.div`
 const InfoElement = styled.div`
     text-transform: uppercase;
     margin:0 1rem;
+
        @media (max-width: 991.98px){
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+       }
+       @media (max-width: 500px){
+        font-size: 0.6rem;
     }
 `
 
@@ -90,11 +97,12 @@ const DividerSm = styled.div`
     width: 0;
 `
 const ImageContainer = styled.div`
-    width:100%;
+    width:50px;
     display:flex;
     align-items: center;
     @media (max-width: 500px){
-        display: none;
+        min-width: 20px;
+       width:90%;
     }
 `
 
@@ -117,11 +125,11 @@ const FeaturedGames = ({ gameData }) => {
                 <TeamsSection>
                     <Name>{homeN}</Name>
                     <ImageContainer>
-                        <GatsbyImage image={homeLogoN} alt="logo" object-fit='scale-down' />
+                        <GatsbyImage image={homeLogoN} alt="logo" />
                     </ImageContainer>
                     <Name>{resultN}</Name>
                     <ImageContainer>
-                        <GatsbyImage image={awayLogoN} alt="logo" object-fit='scale-down' />
+                        <GatsbyImage image={awayLogoN} alt="logo" />
                     </ImageContainer>
                     <Name>{awayN}</Name>
                 </TeamsSection>
