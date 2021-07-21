@@ -1,6 +1,6 @@
 ---
 title: Izdebnik vs Sosnowianka
-home: Izdebnik
+home: Jubilat Izdebnik
 homeLogo: src/images/izdebnik.jpg
 result: VS
 away: Sosnowianka

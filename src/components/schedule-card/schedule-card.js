@@ -19,6 +19,7 @@ const Card = styled.div`
     }
      @media (max-width: 991.98px){
         padding:0.5rem;
+        margin: auto;
     }
     `
 const LeagueInfo = styled.span`
