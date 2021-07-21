@@ -23,6 +23,7 @@ const Container = styled.div`
     @media (max-width: 991.98px){
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 `
 const SectionTitle = styled.h3`
@@ -46,6 +47,7 @@ query schedule {
         title
         date
         league
+        leagueSub
         result
         away
         home
@@ -54,6 +56,12 @@ query schedule {
             gatsbyImageData(formats: AUTO, layout: CONSTRAINED, placeholder: BLURRED)
           }
         }
+        awayLogo {
+          childImageSharp {
+            gatsbyImageData(formats: AUTO, layout: CONSTRAINED, placeholder: BLURRED)
+          }
+        }
+        time
       }
       id
     }
@@ -67,12 +75,19 @@ query schedule {
         <Card>
             <SectionTitle>Terminarz jesień 2021/2022</SectionTitle>
             <Container>
-                <ScheduleCard />
-                <ScheduleCard />
-                <ScheduleCard />
-                <ScheduleCard />
-                <ScheduleCard />
-                <ScheduleCard />
+                {schedule.map(game => (
+                    <ScheduleCard key={game.id}
+                        home={game.frontmatter.home}
+                        away={game.frontmatter.away}
+                        league={game.frontmatter.league}
+                        leagueSub={game.frontmatter.leagueSub}
+                        date={game.frontmatter.date}
+                        time={game.frontmatter.time}
+                        result={game.frontmatter.result}
+                        awayLogo={game.frontmatter.awayLogo}
+                        homeLogo={game.frontmatter.homeLogo}
+                    />
+                ))}
             </Container>
         </Card>
     );

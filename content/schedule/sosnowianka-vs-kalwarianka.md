@@ -1,11 +1,12 @@
 ---
 title: Kalwarianka vs Sosnowianka
-home: Izdebnik
+home: Sosnowianka
 homeLogo: src/images/sosnowiankaLogo.png
 result: VS
-away: Sosnowianka
-awayLogo: src/images/kalwarianka.jpg
-league: 2 kolejka B Klasa
-date: 29-07-2021
-time: 18:00
+away: Kalwarianka II
+awayLogo: src/images/kalwarianka.png
+league: Puchar Polski
+leagueSub: 1 runda
+date: '2021-07-29'
+time: '18:00'
 ---

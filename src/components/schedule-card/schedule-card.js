@@ -8,7 +8,7 @@ const Card = styled.div`
     border: 1px solid #E2E2E2;
     width: 100%;
     max-width: 600px;
-    margin: .7rem;
+    margin: .6rem;
     padding:1.5rem;
     -webkit-box-shadow: 4px 4px 6px 0px rgba(50, 50, 50, 0.16);
     -moz-box-shadow:    4px 4px 6px 0px rgba(50, 50, 50, 0.16);
@@ -18,7 +18,7 @@ const Card = styled.div`
         transform: scale(1.01);
     }
      @media (max-width: 991.98px){
-        padding:0.8rem;
+        padding:0.5rem;
     }
     `
 const LeagueInfo = styled.span`
@@ -36,8 +36,17 @@ const Icon = styled.i`
     color:#16A17C;
 `
 const Name = styled.span`
+    padding:0.5rem;
     text-transform: uppercase;
-    font-weight:bold;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    @media (max-width: 991.98px){
+        font-size: 1rem;
+    }
+    @media (max-width: 500px){
+        font-size: 0.7rem;
+    }
+    
 `
 const TeamsContainer = styled.div`
     display:grid;
@@ -61,28 +70,31 @@ const ImageContainer = styled.div`
        width:90%;
     }
 `
-const ScheduleCard = () => {
+const ScheduleCard = ({ away, home, date, league, leagueSub, result, homeLogo, awayLogo, time }) => {
+
+    const homeLogoImage = getImage(homeLogo);
+    const awayLogoImgae = getImage(awayLogo);
 
     return (
         <Card>
             <InfoContainer>
-                <LeagueInfo>1 Kolejka <b>B KLASA</b></LeagueInfo>
+                <LeagueInfo>{leagueSub} <b>{league}</b></LeagueInfo>
                 <DividerSm />
-                <div className="calendar"><Icon className="fas fa-calendar-alt"></Icon> 20.08.2021</div>
+                <div className="calendar"><Icon className="fas fa-calendar-alt"></Icon> {date}</div>
                 <DividerSm />
-                <div className="calendar"><Icon className="far fa-clock"></Icon> 17:00</div>
+                <div className="calendar"><Icon className="far fa-clock"></Icon> {time}</div>
             </InfoContainer>
             <TeamsContainer>
-                <Name>Sosnowianka</Name>
+                <Name>{home}</Name>
                 <ImageContainer>
-                    <div className="logo"></div>
+                    <GatsbyImage image={homeLogoImage} alt="logo" />
                 </ImageContainer>
-                <Name>VS</Name>
+                <Name>{result}</Name>
                 <ImageContainer>
-                    <div className="logo"></div>
+                    <GatsbyImage image={awayLogoImgae} alt="logo" />
                 </ImageContainer>
 
-                <Name>Tempo Białka</Name>
+                <Name>{away}</Name>
             </TeamsContainer>
 
 

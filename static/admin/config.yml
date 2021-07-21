@@ -53,5 +53,6 @@ collections:
       - {label: "Goście", name: "away", widget: "string"}
       - {label: "Logo Goście", name: "awayLogo", widget: "image"}
       - {label: "Rozgrywki", name: "league", widget: "string"}
+      - {label: "Kolejka", name: "leagueSub", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: false }
       - {label: "Godzina", name: "time", widget: "string"}

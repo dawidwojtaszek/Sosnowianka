@@ -5,7 +5,8 @@ homeLogo: src/images/izdebnik.jpg
 result: VS
 away: Sosnowianka
 awayLogo: src/images/sosnowiankaLogo.png
-league: 2 kolejka B Klasa
-date: 2021-04-25
-time: 18:00
+league: B Klasa
+leagueSub: 2 kolejka
+date: '2021-07-25'
+time: '18:00'
 ---
