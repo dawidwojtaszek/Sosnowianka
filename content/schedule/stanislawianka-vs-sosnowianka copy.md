@@ -6,6 +6,6 @@ result: VS
 away: Sosnowianka
 awayLogo: src/images/sosnowiankaLogo.png
 league: 2 kolejka B Klasa
-date: 2021-04-25
+date: 2021-07-15
 time: 18:00
 ---

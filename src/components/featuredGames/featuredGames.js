@@ -49,9 +49,6 @@ const TeamsSection = styled.div`
     grid-template-columns: 4fr 1fr 1fr 1fr 4fr;
     max-width: 700px;
     margin:auto;
-    @media (max-width: 500px){
-        grid-template-columns: 4fr 1fr 1fr 1fr 4fr
-    } 
 `
 const Name = styled.span`
     padding:0.5rem;

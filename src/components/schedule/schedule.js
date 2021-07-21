@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import ScheduleCard from '../schedule-card/schedule-card';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const Card = styled.div`
     background-color: white;
@@ -34,7 +35,34 @@ const SectionTitle = styled.h3`
 `
 
 const Schedule = () => {
+    const data = useStaticQuery(graphql`
+query schedule {
+  allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/schedule/"}}
+    sort: {fields: frontmatter___date}
+  ) {
+    nodes {
+      frontmatter {
+        title
+        date
+        league
+        result
+        away
+        home
+        homeLogo {
+          childImageSharp {
+            gatsbyImageData(formats: AUTO, layout: CONSTRAINED, placeholder: BLURRED)
+          }
+        }
+      }
+      id
+    }
+  }
+}
 
+`)
+    const schedule = data.allMarkdownRemark.nodes;
+    console.log(schedule);
     return (
         <Card>
             <SectionTitle>Terminarz jesień 2021/2022</SectionTitle>
@@ -49,5 +77,6 @@ const Schedule = () => {
         </Card>
     );
 }
+
 
 export default Schedule;

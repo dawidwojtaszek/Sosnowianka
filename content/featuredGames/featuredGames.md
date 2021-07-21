@@ -12,7 +12,7 @@ homeP: Sownowianka
 homeLogoP: src/images/sosnowiankaLogo.png
 resultP: '2:3'
 awayLogoP: src/images/brody.jpg
-awayP: Brzezina Osiek
+awayP: Cedron Brody
 leagueP: Klasa Okręgowa
 dateP: '2021-06-30'
 timeP: '18:00'

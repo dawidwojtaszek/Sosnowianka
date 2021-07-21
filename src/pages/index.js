@@ -7,7 +7,6 @@ import FeaturedGames from "../components/featuredGames/featuredGames"
 
 const IndexPage = ({ data }) => {
 
-  console.log(data.allMarkdownRemark.nodes);
   const featuredGames = data.allMarkdownRemark.nodes[0].frontmatter;
 
   return (

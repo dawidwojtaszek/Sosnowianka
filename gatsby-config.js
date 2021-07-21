@@ -30,6 +30,13 @@ module.exports = {
         path: `${__dirname}/content/featuredGames`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `schedule`,
+        path: `${__dirname}/content/schedule`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
