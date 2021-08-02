@@ -2,19 +2,19 @@
 homeN: Sosnowianka
 homeLogoN: src/images/sosnowiankaLogo.png
 resultN: VS
-awayLogoN: src/images/kalwarianka.png
-awayN: Kalwarianka II
+awayLogoN: src/images/skawa.jpg
+awayN: Skawa Wadowice
 leagueN: Puchar Polski
-dateN: '25.07.2021'
-timeN: '17:30'
+dateN: '07.08.2021'
+timeN: '17:00'
 placeN: Boisko Sosnowianki
-homeP: Sownowianka
-homeLogoP: src/images/sosnowiankaLogo.png
-resultP: '2:3'
-awayLogoP: src/images/brody.jpg
-awayP: Cedron Brody
-leagueP: Klasa Okręgowa
-dateP: '2021-06-30'
+homeP: Żarek Barwałd
+homeLogoP: src/images/barwald.jpg
+resultP: '1:3'
+awayLogoP: src/images/sosnowiankaLogo.png
+awayP: Sosnowianka
+leagueP: Puchar Polski
+dateP: '2021-07-31'
 timeP: '18:00'
-placeP: Boisko Sosnowianki
+placeP: Barwałd
 ---

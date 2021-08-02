@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import FeaturedGames from "../components/featuredGames/featuredGames"
+import Sponsor from "../components/sponsor/sponsor";
 
 const IndexPage = ({ data }) => {
 
@@ -14,7 +15,7 @@ const IndexPage = ({ data }) => {
       <Seo title="Strona Główna" />
 
       <FeaturedGames gameData={featuredGames} />
-
+      <Sponsor />
     </Layout>
   )
 }
