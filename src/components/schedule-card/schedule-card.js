@@ -6,20 +6,20 @@ const Card = styled.div`
     background-color: white;
     border-radius: 7px;
     border: 1px solid #E2E2E2;
-    width: 100%;
+  
     max-width: 600px;
     margin: .6rem;
-    padding:1.5rem;
+    padding:1rem;
     -webkit-box-shadow: 4px 4px 6px 0px rgba(50, 50, 50, 0.16);
     -moz-box-shadow:    4px 4px 6px 0px rgba(50, 50, 50, 0.16);
     box-shadow:         4px 4px 6px 0px rgba(50, 50, 50, 0.16);
    
-    :hover{
+    /* :hover{
         transform: scale(1.01);
-    }
+    } */
      @media (max-width: 991.98px){
         padding:0.5rem;
-        margin: auto;
+        margin: 0.5rem auto;
     }
     `
 const LeagueInfo = styled.span`
@@ -46,6 +46,9 @@ const Name = styled.span`
     }
     @media (max-width: 500px){
         font-size: 0.7rem;
+    }
+    @media (max-width: 361px){
+        font-size: 0.6rem;
     }
     
 `

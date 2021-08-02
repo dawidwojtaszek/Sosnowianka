@@ -6,7 +6,7 @@ result: VS
 away: Sosnowianka
 awayLogo: src/images/sosnowiankaLogo.png
 league: B Klasa
-leagueSub: 14 kolejka
-date: '2021-08-29'
-time: '18:00'
+leagueSub: 9 kolejka
+date: '2021-10-09'
+time: '15:00'
 ---
