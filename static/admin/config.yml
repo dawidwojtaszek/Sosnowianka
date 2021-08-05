@@ -58,13 +58,11 @@ collections:
       - {label: "Godzina", name: "time", widget: "string"}
   - name: "sponsors"
     label: "Sponsorzy"
-    file: "content/sponsor/sponsor.md"
+    folder: "content/sponsor"
     create: true
+    slug: "{{name}}"
     fields:
-      - label: "Sponsorzy"
-        name: "sponsors"
-        widget: "list"
-        fields: 
-          - {label: Nazwa, name: name, widget: string}
-          - {label: Logo, name: logo, widget: image}
+      - {label: "Nazwa", name: "sponsorName", widget: "string"}
+      - {label: "Logo", name: "sponsorLogo", widget: "image"}
+
       

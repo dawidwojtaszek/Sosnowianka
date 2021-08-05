@@ -36,61 +36,61 @@ const SectionTitle = styled.h3`
 `
 
 const Schedule = () => {
-    const data = useStaticQuery(graphql`
-query schedule {
-  allMarkdownRemark(
-    filter: {fileAbsolutePath: {regex: "/schedule/"}}
-    sort: {fields: frontmatter___date}
-  ) {
-    nodes {
-      frontmatter {
-        title
-        date
-        league
-        leagueSub
-        result
-        away
-        home
-        homeLogo {
-          childImageSharp {
-            gatsbyImageData(formats: AUTO, layout: CONSTRAINED, placeholder: BLURRED)
+  const data = useStaticQuery(graphql`
+  query schedule {
+    allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/schedule/"}}
+      sort: {fields: frontmatter___date}
+    ) {
+      nodes {
+        frontmatter {
+          title
+          date
+          league
+          leagueSub
+          result
+          away
+          home
+          homeLogo {
+            childImageSharp {
+              gatsbyImageData(formats: AUTO, layout: CONSTRAINED, placeholder: BLURRED)
+            }
           }
-        }
-        awayLogo {
-          childImageSharp {
-            gatsbyImageData(formats: AUTO, layout: CONSTRAINED, placeholder: BLURRED)
+          awayLogo {
+            childImageSharp {
+              gatsbyImageData(formats: AUTO, layout: CONSTRAINED, placeholder: BLURRED)
+            }
           }
+          time
         }
-        time
+        id
       }
-      id
     }
   }
-}
 
-`)
-    const schedule = data.allMarkdownRemark.nodes;
-    console.log(schedule);
-    return (
-        <Card>
-            <SectionTitle>Terminarz jesień 2021/2022</SectionTitle>
-            <Container>
-                {schedule.map(game => (
-                    <ScheduleCard key={game.id}
-                        home={game.frontmatter.home}
-                        away={game.frontmatter.away}
-                        league={game.frontmatter.league}
-                        leagueSub={game.frontmatter.leagueSub}
-                        date={game.frontmatter.date}
-                        time={game.frontmatter.time}
-                        result={game.frontmatter.result}
-                        awayLogo={game.frontmatter.awayLogo}
-                        homeLogo={game.frontmatter.homeLogo}
-                    />
-                ))}
-            </Container>
-        </Card>
-    );
+  `)
+  const schedule = data.allMarkdownRemark.nodes;
+
+  return (
+    <Card>
+      <SectionTitle>Terminarz jesień 2021/2022</SectionTitle>
+      <Container>
+        {schedule.map(game => (
+          <ScheduleCard key={game.id}
+            home={game.frontmatter.home}
+            away={game.frontmatter.away}
+            league={game.frontmatter.league}
+            leagueSub={game.frontmatter.leagueSub}
+            date={game.frontmatter.date}
+            time={game.frontmatter.time}
+            result={game.frontmatter.result}
+            awayLogo={game.frontmatter.awayLogo}
+            homeLogo={game.frontmatter.homeLogo}
+          />
+        ))}
+      </Container>
+    </Card>
+  );
 }
 
 

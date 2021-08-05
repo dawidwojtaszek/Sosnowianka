@@ -37,6 +37,13 @@ module.exports = {
         path: `${__dirname}/content/schedule`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sponsor`,
+        path: `${__dirname}/content/sponsor`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
