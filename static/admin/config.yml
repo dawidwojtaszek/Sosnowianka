@@ -56,3 +56,15 @@ collections:
       - {label: "Kolejka", name: "leagueSub", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: false }
       - {label: "Godzina", name: "time", widget: "string"}
+  - name: "sponsors"
+    label: "Sponsorzy"
+    file: "content/sponsor/sponsor.md"
+    create: true
+    fields:
+      - label: "Sponsorzy"
+        name: "sponsors"
+        widget: "list"
+        fields: 
+          - {label: Nazwa, name: name, widget: string}
+          - {label: Logo, name: logo, widget: image}
+      
