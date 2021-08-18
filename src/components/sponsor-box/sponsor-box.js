@@ -10,9 +10,13 @@ const SponsorContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:8px;
+    margin:25px 8px;
     max-width: 127px;
     text-align:center;
+        @media (max-width: 500px){
+            margin: 15px 8px;
+            
+    }
 
 `
 const SponsorLogo = styled.div`
@@ -31,7 +35,7 @@ const SponsorName = styled.h4`
     font-size: 16px;
     font-weight: bold;
     margin-top: 8px;
-   
+    display: none;
     
 `
 

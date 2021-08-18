@@ -58,7 +58,7 @@ query featuredGames {
         awayN
         awayP
         dateN
-        dateP(formatString: "DD.MM.YYYY")
+        dateP
       }
     }
   }

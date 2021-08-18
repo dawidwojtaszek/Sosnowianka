@@ -29,7 +29,8 @@ const SponsorFeatured = styled.div`
     align-items: center;
     width: 300px;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 25px ;
+
            @media (max-width: 500px){
             margin-top: 20px;
             width: 250px;
@@ -57,7 +58,10 @@ const SponsorFeaturedName = styled.h3`
 const SponsorListContainer = styled.div`
     display: flex;
     margin-top: 25px;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
+    @media (max-width: 500px){
+        justify-content: space-around;
+    }
 `
 const Divider = styled.div`
     border-left:1px solid #EBEBEB;
@@ -110,6 +114,7 @@ const Sponsor = () => {
                             sponsorLogo={sponsor.frontmatter.sponsorLogo}
                             sponsorName={sponsor.frontmatter.sponsorName}
                         />
+
                     ))
                 }
             </SponsorListContainer>
