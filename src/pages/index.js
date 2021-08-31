@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import FeaturedGames from "../components/featuredGames/featuredGames"
 import Sponsor from "../components/sponsor/sponsor";
+import News from "../components/news/news";
 
 const IndexPage = ({ data }) => {
 
@@ -15,6 +16,7 @@ const IndexPage = ({ data }) => {
       <Seo title="Strona Główna" />
 
       <FeaturedGames gameData={featuredGames} />
+      <News />
       <Sponsor />
     </Layout>
   )

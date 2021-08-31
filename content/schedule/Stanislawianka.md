@@ -2,7 +2,7 @@
 title: Stanisławianka vs Sosnowianka
 home: Stanisławianka
 homeLogo: src/images/stanislawianka.jpg
-result: VS
+result: '1:2'
 away: Sosnowianka
 awayLogo: src/images/sosnowiankaLogo.png
 league: B Klasa

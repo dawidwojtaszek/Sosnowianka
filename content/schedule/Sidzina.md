@@ -2,7 +2,7 @@
 title: Sosnowianka vs Sidzina
 home: Sosnowianka
 homeLogo: src/images/sosnowiankaLogo.png
-result: VS
+result: '1:4'
 away: Dąb Sidzina
 awayLogo: src/images/sidzina.jpg
 league: B Klasa

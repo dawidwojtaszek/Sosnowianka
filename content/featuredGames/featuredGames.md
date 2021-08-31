@@ -2,19 +2,19 @@
 homeN: Sosnowianka
 homeLogoN: src/images/sosnowiankaLogo.png
 resultN: VS
-awayLogoN: src/images/sidzina.jpg
-awayN: Dąb Sidzina
+awayLogoN: src/images/osielec.jpg
+awayN: Świt Osielec
 leagueN: B klasa
-dateN: '22.08.2021'
+dateN: '05.09.2021'
 timeN: '17:00'
 placeN: Stanisław Dolny
-homeP: Sosnowianka
-homeLogoP: src/images/sosnowiankaLogo.png
-resultP: '2:0'
-awayLogoP: src/images/jastrzebia.jpg
-awayP: Jastrzębianka
+homeP: Stanisławianka
+homeLogoP: src/images/stanislawianka.jpg
+resultP: '1:2'
+awayLogoP: src/images/sosnowiankaLogo.png
+awayP: Sosnowianka
 leagueP: B klasa
-dateP: '15.08.2021'
+dateP: '28.08.2021'
 timeP: '17:00'
-placeP: Stanisław Dolny
+placeP: Stanisław Dolny 
 ---

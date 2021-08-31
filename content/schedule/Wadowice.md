@@ -2,7 +2,7 @@
 title: Sosnowinka vs Skawa Wadowice
 home: Sosnowianka
 homeLogo: src/images/sosnowiankaLogo.png
-result: VS
+result: '0:8'
 away: Skawa Wadowice
 awayLogo: src/images/skawa.jpg
 league: Puchar Polski

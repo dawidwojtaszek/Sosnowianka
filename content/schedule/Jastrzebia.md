@@ -2,7 +2,7 @@
 title: Jastrzębianka
 home: Sosnowianka
 homeLogo: src/images/sosnowiankaLogo.png
-result: VS
+result: '2:0'
 away: Jastrzębianka
 awayLogo: src/images/jastrzebia.jpg
 league: B Klasa
