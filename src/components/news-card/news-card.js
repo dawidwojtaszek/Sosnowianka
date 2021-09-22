@@ -8,10 +8,21 @@ const Container = styled.div`
     display: grid;
     grid-gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    @media (max-width: 900px){
+        grid-template-columns: 1fr;
+        margin:0.5rem;
+        padding:0.5rem;
+        grid-gap:0.5rem;
+    }
     
 `;
 const Thumbnail = styled.div`
     width:100%;
+    @media (max-width: 900px){
+        max-height: 300px;
+        overflow: hidden;
+    }
 `
 const Article = styled.article`
     width: 100%;
