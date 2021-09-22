@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import { graphql, useStaticQuery } from 'gatsby';
+import NewsCard from '../news-card/news-card';
 
 const SectionTitle = styled.h3`
     text-transform: uppercase;
@@ -25,10 +26,43 @@ const Card = styled.div`
 
 const News = () => {
 
+    const data = useStaticQuery(graphql`
+query news {
+  allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/_posts/"}}
+    sort: {fields: frontmatter___date, order: DESC}
+  ) {
+    nodes {
+      frontmatter {
+        layout
+        title
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: BLURRED
+              aspectRatio: 1.9
+              transformOptions: {cropFocus: CENTER}
+            )
+          }
+        }
+        date(formatString: "DD.MM.YYYY")
+      }
+      id
+    }
+  }
+}
 
+  `)
+    const newsList = data.allMarkdownRemark.nodes;
+    console.log(newsList);
     return (
         <Card>
             <SectionTitle>Aktualności:</SectionTitle>
+            {newsList.map(news => (<NewsCard
+                title={news.frontmatter.title}
+                thumbnail={news.frontmatter.thumbnail}
+                date={news.frontmatter.date}
+            />))}
         </Card>
     )
 }

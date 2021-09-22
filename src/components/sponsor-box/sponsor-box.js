@@ -28,6 +28,7 @@ const SponsorLogo = styled.div`
             @media (max-width: 500px){
             width: 100px;
     }
+    
 `
 const SponsorName = styled.h4`
     color:#616161;

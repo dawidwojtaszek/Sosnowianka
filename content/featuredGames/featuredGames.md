@@ -1,20 +1,20 @@
 ---
-homeN: Sosnowianka
-homeLogoN: src/images/sosnowiankaLogo.png
+homeN: Olimpia Zebrzydowice
+homeLogoN: src/images/zebrzydowice.jpg
 resultN: VS
-awayLogoN: src/images/osielec.jpg
-awayN: Świt Osielec
+awayLogoN: src/images/sosnowiankaLogo.png
+awayN: Sosnowianka
 leagueN: B klasa
-dateN: '05.09.2021'
-timeN: '17:00'
-placeN: Stanisław Dolny
-homeP: Stanisławianka
-homeLogoP: src/images/stanislawianka.jpg
-resultP: '1:2'
-awayLogoP: src/images/sosnowiankaLogo.png
-awayP: Sosnowianka
+dateN: '26.09.2021'
+timeN: '16:00'
+placeN: Zebrzydowice
+homeP: Sosnowianka
+homeLogoP: src/images/sosnowiankaLogo.png
+resultP: '1:3'
+awayLogoP: src/images/skawce.png
+awayP: Spartak Skawce
 leagueP: B klasa
-dateP: '28.08.2021'
-timeP: '17:00'
+dateP: '19.09.2021'
+timeP: '16:00'
 placeP: Stanisław Dolny 
 ---

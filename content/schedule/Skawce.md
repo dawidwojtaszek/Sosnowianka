@@ -2,7 +2,7 @@
 title: Sosnowianka vs Spartak Skawce
 home: Sosnowianka
 homeLogo: src/images/sosnowiankaLogo.png
-result: VS
+result: '1:3'
 away: Spartka Skawce
 awayLogo: src/images/skawce.png
 league: B Klasa
