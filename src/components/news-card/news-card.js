@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-
+import { Link } from "gatsby"
+import './news-card.style.css'
 const Container = styled.div`
     margin: 2rem;
     padding:1rem;
@@ -27,6 +28,7 @@ const Thumbnail = styled.div`
 const Article = styled.article`
     width: 100%;
     padding: 1rem;
+    height: 100%;
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -35,6 +37,8 @@ const Article = styled.article`
 const ArticleTitle = styled.h2`
     text-transform: uppercase;
     font-weight: bolder;
+    color:black;
+    
 `
 const ArticleDate = styled.p`
     margin: 0.8rem 0;
@@ -49,30 +53,33 @@ const ReadMoreBtn = styled.button`
     background-color: white;
     cursor: pointer;
     margin-top:1rem;
+    transition: 0.3s;
     float: right;
     :hover{
         color:white;
         background-color:#16A17C;
     }
 `
-const NewsCard = ({ title, thumbnail, date }) => {
+const NewsCard = ({ title, thumbnail, date, path }) => {
 
     const newsThumbnail = getImage(thumbnail)
     return (
+
         <Container>
             <Thumbnail>
                 <GatsbyImage image={newsThumbnail} alt={`${title} thumbnail`} />
             </Thumbnail>
             <Article>
 
-                <ArticleTitle>{title}</ArticleTitle>
+                <Link to={`/news/${path}`}><ArticleTitle>{title}</ArticleTitle></Link>
                 <ArticleDate>{date}</ArticleDate>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci enim eveniet tenetur recusandae quo doloribus totam rem neque reiciendis atque.</p>
-                <ReadMoreBtn>Czytaj Więcej</ReadMoreBtn>
+                <Link to={`/news/${path}`}><ReadMoreBtn>Czytaj Więcej</ReadMoreBtn></Link>
             </Article>
 
 
         </Container>
+
     )
 }
 

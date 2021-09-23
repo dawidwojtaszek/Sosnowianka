@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-
+import { graphql, useStaticQuery } from 'gatsby';
 const Card = styled.div`
     background-color: white;
     border-radius: 7px;
@@ -105,15 +105,61 @@ const ImageContainer = styled.div`
 
 
 
-const FeaturedGames = ({ gameData }) => {
+const FeaturedGames = () => {
+
+    const data = useStaticQuery(graphql`
+query featuredGames {
+  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/featuredGames/"}}) {
+    nodes {
+      frontmatter {
+        awayLogoN {
+          childImageSharp {
+            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: CONSTRAINED)
+          }
+        }
+        awayLogoP {
+          childImageSharp {
+            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: CONSTRAINED)
+          }
+        }
+        homeLogoN {
+          childImageSharp {
+            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: CONSTRAINED)
+          }
+        }
+        homeLogoP {
+          childImageSharp {
+            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: CONSTRAINED)
+          }
+        }
+        homeN
+        homeP
+        leagueN
+        leagueP
+        placeN
+        placeP
+        resultN
+        resultP
+        timeN
+        timeP
+        awayN
+        awayP
+        dateN
+        dateP
+      }
+    }
+  }
+}
+  `)
+
+
+    const gameData = data.allMarkdownRemark.nodes[0].frontmatter
+
     const { homeN, resultN, awayN, timeN, dateN, placeN, homeP, resultP, awayP, dateP, timeP, placeP, leagueN, leagueP } = gameData;
     const homeLogoN = getImage(gameData.homeLogoN);
     const awayLogoN = getImage(gameData.awayLogoN);
     const homeLogoP = getImage(gameData.homeLogoP);
     const awayLogoP = getImage(gameData.awayLogoP);
-    console.log(typeof (dateN))
-    console.log('featuredGames');
-    console.log(homeLogoN);
     return (
         <Card>
             <GameContainer>

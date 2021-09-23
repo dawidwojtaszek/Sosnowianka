@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby';
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -7,64 +7,49 @@ import FeaturedGames from "../components/featuredGames/featuredGames"
 import Sponsor from "../components/sponsor/sponsor";
 import News from "../components/news/news";
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, props, pageContext }) => {
 
-  const featuredGames = data.allMarkdownRemark.nodes[0].frontmatter;
+  const { currentPage, numPages } = pageContext;
+  const isFirst = currentPage === 1;
 
   return (
     <Layout>
       <Seo title="Strona Główna" />
-
-      <FeaturedGames gameData={featuredGames} />
-      <News />
+      <FeaturedGames />
+      <News posts={data.allMarkdownRemark.nodes} />
       <Sponsor />
     </Layout>
   )
 }
 
-export const query = graphql`
-query featuredGames {
-  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/featuredGames/"}}) {
-    nodes {
-      frontmatter {
-        awayLogoN {
-          childImageSharp {
-            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: CONSTRAINED)
+export const newsQuery = graphql`
+query news($limit: Int=4, $skip: Int) {
+    allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/_posts/"}}
+      sort: {fields: frontmatter___date, order: DESC}
+      limit: $limit
+      skip: $skip
+    ) {
+      nodes {
+        frontmatter {
+          layout
+          title
+          path
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData(
+                placeholder: BLURRED
+                aspectRatio: 1.9
+                transformOptions: {cropFocus: CENTER}
+              )
+            }
           }
+          date(formatString: "DD.MM.YYYY")
         }
-        awayLogoP {
-          childImageSharp {
-            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: CONSTRAINED)
-          }
-        }
-        homeLogoN {
-          childImageSharp {
-            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: CONSTRAINED)
-          }
-        }
-        homeLogoP {
-          childImageSharp {
-            gatsbyImageData(width: 50, placeholder: BLURRED, formats: AUTO, layout: CONSTRAINED)
-          }
-        }
-        homeN
-        homeP
-        leagueN
-        leagueP
-        placeN
-        placeP
-        resultN
-        resultP
-        timeN
-        timeP
-        awayN
-        awayP
-        dateN
-        dateP
+        id
       }
     }
   }
-}
-`
+    `
 
 export default IndexPage

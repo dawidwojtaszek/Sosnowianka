@@ -71,25 +71,23 @@ const Divider = styled.div`
 const Sponsor = () => {
 
     const data = useStaticQuery(graphql`
-    query sponsor {
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/sponsor/"}}) {
-        nodes {
-        frontmatter {
-            sponsorName
-            sponsorLogo {
-            childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 100)
-            }
-            }
+query sponsor {
+  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/sponsor/"}}) {
+    nodes {
+      frontmatter {
+        sponsorName
+        sponsorLogo {
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 100)
+          }
         }
-        }
+      }
+      id
     }
-    }
-
-
+  }
+}
     `)
     const sponsorList = data.allMarkdownRemark.nodes;
-    console.log(sponsorList);
 
     return (
         <Card>
@@ -111,6 +109,7 @@ const Sponsor = () => {
                 {
                     sponsorList.map(sponsor => (
                         <SponsorBox
+                            key={sponsor.id}
                             sponsorLogo={sponsor.frontmatter.sponsorLogo}
                             sponsorName={sponsor.frontmatter.sponsorName}
                         />
