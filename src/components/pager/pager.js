@@ -3,13 +3,11 @@ import { Link } from 'gatsby'
 
 
 const Pager = (pageContext) => {
+    console.log(pageContext);
 
-    const { previousPagePath, nextPagePath } = pageContext;
     return (
         <div>
-
-            <span>{previousPagePath}</span>
-            <span>{nextPagePath}</span>
+            tu bedzie daje i wstecz
         </div>
     )
 }

@@ -11,7 +11,8 @@ const IndexPage = ({ data, props, pageContext }) => {
 
   const { currentPage, numPages } = pageContext;
   const isFirst = currentPage === 1;
-
+  console.log('currentPage');
+  console.log(currentPage);
   return (
     <Layout>
       <Seo title="Strona Główna" />

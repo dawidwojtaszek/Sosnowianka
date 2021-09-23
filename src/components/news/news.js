@@ -24,42 +24,9 @@ const Card = styled.div`
     }
     `
 
-const News = ({ posts }) => {
-
-
-
-  // const data = useStaticQuery(graphql`
-  // query news($limit: Int, $skip: Int) {
-  //   allMarkdownRemark(
-  //     filter: {fileAbsolutePath: {regex: "/_posts/"}}
-  //     sort: {fields: frontmatter___date, order: DESC}
-  //     limit: $limit
-  //     skip: $skip
-  //   ) {
-  //     nodes {
-  //       frontmatter {
-  //         layout
-  //         title
-  //         path
-  //         thumbnail {
-  //           childImageSharp {
-  //             gatsbyImageData(
-  //               placeholder: BLURRED
-  //               aspectRatio: 1.9
-  //               transformOptions: {cropFocus: CENTER}
-  //             )
-  //           }
-  //         }
-  //         date(formatString: "DD.MM.YYYY")
-  //       }
-  //       id
-  //     }
-  //   }
-  // }
-  //   `)
-  console.log('posty w newsach');
-  console.log(posts);
-
+const News = ({ posts, pageContext }) => {
+  console.log(' news page context');
+  console.log(pageContext);
   const newsList = posts;
 
   return (
@@ -72,6 +39,10 @@ const News = ({ posts }) => {
         path={news.frontmatter.path}
         key={news.id}
       />))}
+
+
+      {/* {currentPage > 1 ? (<Link to={`/${currentPage - 1}`}>Poprzednia Strona</Link>) : (<div>blbaba</div>)}
+      {currentPage === undefined ? (<Link to={`/2`}>Następna Strona</Link>) : (<Link to={`/${currentPage + 1}`}>Następna Strona</Link>)} */}
 
     </Card>
   )
