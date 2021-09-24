@@ -1,0 +1,10 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}

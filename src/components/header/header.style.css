@@ -97,7 +97,7 @@ nav ul{
     header{
         height: 70px;
     }
-    .header-name-section img, .site-name h2, .navigation{
+    .header-logo-lg, .site-name h2, .navigation{
         display: none;
     }
     .site-name h1{

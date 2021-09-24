@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import { Link } from 'gatsby';
 import NewsCard from '../news-card/news-card';
-
+import './news.style.css';
 const SectionTitle = styled.h3`
     text-transform: uppercase;
     color: #616161;
@@ -23,10 +23,33 @@ const Card = styled.div`
         padding:1rem;
     }
     `
+const Pagination = styled.div`
+  display:flex;
+  justify-content: center;
+  width: 100%;
+`
+const PaginationElement = styled.div`
+  color:black;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-weight: bolder;
+`
 
-const News = ({ posts, pageContext }) => {
-  console.log(' news page context');
-  console.log(pageContext);
+
+const News = ({ posts, isLast, isFirst, numPages, currentPage }) => {
+
+
+
+  const prevPath = currentPage - 1 === 1 ? '/' : `/${currentPage - 1}`;
+  console.log('News props');
+  console.log('isfirst');
+  console.log(isFirst);
+  console.log('isLast');
+  console.log(isLast);
+  console.log('numPages');
+  console.log(numPages);
+  console.log('currentPage');
+  console.log(currentPage);
   const newsList = posts;
 
   return (
@@ -40,9 +63,19 @@ const News = ({ posts, pageContext }) => {
         key={news.id}
       />))}
 
+      <Pagination>
+        <PaginationElement>
+          <Link to={prevPath} className={isFirst ? 'hidden' : 'show'}><i class="fas fa-chevron-left"></i> Wstecz</Link>
+        </PaginationElement>
+        <PaginationElement>
+          <span>{currentPage}</span>
+        </PaginationElement>
+        <PaginationElement>
+          <Link to={`/${currentPage + 1}`} className={isLast ? 'hidden' : 'show'} >Następne <i class="fas fa-chevron-right"></i></Link>
+        </PaginationElement>
 
-      {/* {currentPage > 1 ? (<Link to={`/${currentPage - 1}`}>Poprzednia Strona</Link>) : (<div>blbaba</div>)}
-      {currentPage === undefined ? (<Link to={`/2`}>Następna Strona</Link>) : (<Link to={`/${currentPage + 1}`}>Następna Strona</Link>)} */}
+      </Pagination>
+
 
     </Card>
   )

@@ -9,15 +9,19 @@ import News from "../components/news/news";
 
 const IndexPage = ({ data, props, pageContext }) => {
 
-  const { currentPage, numPages } = pageContext;
-  const isFirst = currentPage === 1;
-  console.log('currentPage');
-  console.log(currentPage);
+  const { numPages, currentPage } = pageContext;
+  let currentPageCorrect = currentPage;
+  currentPage === undefined ? currentPageCorrect = 1 : currentPageCorrect = currentPage;
+  let isFirst = true;
+  currentPageCorrect === 1 ? isFirst = true : isFirst = false
+  let isLast = false;
+  currentPageCorrect === numPages ? isLast = true : isLast = false;
+
   return (
     <Layout>
       <Seo title="Strona Główna" />
       <FeaturedGames />
-      <News posts={data.allMarkdownRemark.nodes} />
+      <News posts={data.allMarkdownRemark.nodes} isLast={isLast} isFirst={isFirst} currentPage={currentPageCorrect} numPages={numPages} />
       <Sponsor />
     </Layout>
   )
