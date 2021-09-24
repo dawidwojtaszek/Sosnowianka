@@ -7,14 +7,16 @@ import mobileLogo from "../../images/sosnowiankaLogoMobile.png"
 import MobileMenu from "../mobile-menu/mobileMenu"
 import styled from "styled-components"
 
-const Header = ({ siteTitle, siteSubTitle }) => {
-
-  const MobileLogo = styled.img`
+const MobileLogo = styled.img`
     display: none;
     @media (max-width: 991.98px) {
       display: block;
     }
   `
+
+const Header = ({ siteTitle, siteSubTitle }) => {
+
+
   return (
     <header>
       <div className="container header-container">

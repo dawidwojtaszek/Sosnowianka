@@ -36,20 +36,11 @@ const PaginationElement = styled.div`
 `
 
 
-const News = ({ posts, isLast, isFirst, numPages, currentPage }) => {
+const News = ({ posts, isLast, isFirst, currentPage }) => {
 
 
 
   const prevPath = currentPage - 1 === 1 ? '/' : `/${currentPage - 1}`;
-  console.log('News props');
-  console.log('isfirst');
-  console.log(isFirst);
-  console.log('isLast');
-  console.log(isLast);
-  console.log('numPages');
-  console.log(numPages);
-  console.log('currentPage');
-  console.log(currentPage);
   const newsList = posts;
 
   return (
@@ -65,13 +56,13 @@ const News = ({ posts, isLast, isFirst, numPages, currentPage }) => {
 
       <Pagination>
         <PaginationElement>
-          <Link to={prevPath} className={isFirst ? 'hidden' : 'show'}><i class="fas fa-chevron-left"></i> Wstecz</Link>
+          <Link to={prevPath} className={isFirst ? 'hidden' : 'show'}><i className="fas fa-chevron-left"></i> Wstecz</Link>
         </PaginationElement>
         <PaginationElement>
           <span>{currentPage}</span>
         </PaginationElement>
         <PaginationElement>
-          <Link to={`/${currentPage + 1}`} className={isLast ? 'hidden' : 'show'} >Następne <i class="fas fa-chevron-right"></i></Link>
+          <Link to={`/${currentPage + 1}`} className={isLast ? 'hidden' : 'show'} >Następne <i className="fas fa-chevron-right"></i></Link>
         </PaginationElement>
 
       </Pagination>

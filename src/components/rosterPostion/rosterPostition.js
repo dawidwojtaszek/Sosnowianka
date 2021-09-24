@@ -44,7 +44,7 @@ const RosterPosition = ({ positionName, playerList }) => {
                 </Thead>
                 <Tbody>
                     {playerList.map(player => (
-                        <tr>
+                        <tr key={player.id}>
                             <td>{player.frontmatter.name} {player.frontmatter.surname}</td>
                             {/* <td>{player.frontmatter.age}</td> */}
                             <td>{player.frontmatter.number}</td>

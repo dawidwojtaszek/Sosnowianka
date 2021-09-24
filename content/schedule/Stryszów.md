@@ -8,5 +8,5 @@ awayLogo: src/images/sosnowiankaLogo.png
 league: B Klasa
 leagueSub: 13 kolejka
 date: '2021-11-06'
-time: '15:00'
+time: '13:00'
 ---

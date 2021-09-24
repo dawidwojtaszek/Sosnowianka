@@ -97,6 +97,7 @@ query players {
         number
         age
       }
+      id
     }
   }
 }

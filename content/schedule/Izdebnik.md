@@ -8,5 +8,5 @@ awayLogo: src/images/izdebnik.jpg
 league: B Klasa
 leagueSub: 12 kolejka
 date: '2021-10-31'
-time: '15:00'
+time: '14:00'
 ---
