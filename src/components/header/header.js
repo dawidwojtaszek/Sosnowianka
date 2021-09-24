@@ -46,6 +46,7 @@ const Header = ({ siteTitle, siteSubTitle }) => {
                 <button className="navigation-button"><Link to="/">Drużyny <i className="fas fa-chevron-down"></i></Link></button>
                 <div className="dropdown-list">
                   <Link to="/seniorzy">Seniorzy</Link>
+                  <Link to="/">Orliki</Link>
                   <Link to="/">Żaki</Link>
                 </div>
               </li>

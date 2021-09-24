@@ -65,5 +65,16 @@ collections:
     fields:
       - {label: "Nazwa", name: "sponsorName", widget: "string"}
       - {label: "Logo", name: "sponsorLogo", widget: "image"}
+  - name: "players"
+    label: "Zawodnicy"
+    folder: "content/players"
+    create: true
+    slug: "{{name}{surname}}"
+    fields:
+      - {label: "Imię", name: "name", widget: "string"}
+      - {label: "Nazwisko", name: "surname", widget: "string"}
+      - {label: "Pozycja", name: "position", widget: "string"}
+      - {label: "Wiek", name: "age", widget: "number"}
+      - {label: "Numer", name: "number", widget: "number"}
 
       
