@@ -48,12 +48,12 @@ const Header = ({ siteTitle, siteSubTitle }) => {
                 <button className="navigation-button"><Link to="/">Drużyny <i className="fas fa-chevron-down"></i></Link></button>
                 <div className="dropdown-list">
                   <Link to="/seniorzy">Seniorzy</Link>
-                  <Link to="/">Orliki</Link>
-                  <Link to="/">Żaki</Link>
+                  <Link to="/orliki">Orliki</Link>
+                  <Link to="/zaki">Żaki</Link>
                 </div>
               </li>
               <li className="navigation-link">
-                <Link to="/">Kontakt</Link>
+                <Link to="/kontakt">Kontakt</Link>
               </li>
             </ul>
           </nav>

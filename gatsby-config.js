@@ -40,6 +40,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `juniorTeams`,
+        path: `${__dirname}/content/juniorTeams`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `players`,
         path: `${__dirname}/content/players`,
       },

@@ -76,5 +76,15 @@ collections:
       - {label: "Pozycja", name: "position", widget: "string"}
       - {label: "Wiek", name: "age", widget: "number"}
       - {label: "Numer", name: "number", widget: "number"}
+  - name: "juniorPlayers"
+    label: "Drużyny Młodziżowe"
+    folder: "content/juniorTeams"
+    create: true
+    slug: "{{name}{surname}}"
+    fields:
+      - {label: "Nazwa Drużyny", name: "name", widget: "string"}
+      - {label: "Kadra", name: "roster", widget: "markdown"}
+      - {label: "Terminarz", name: "schedule", widget: "markdown"}
+
 
       
