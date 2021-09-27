@@ -80,7 +80,7 @@ collections:
     label: "Drużyny Młodziżowe"
     folder: "content/juniorTeams"
     create: true
-    slug: "{{name}-{section}}"
+    slug: "{{name}{section}}"
     fields:
       - {label: "Nazwa Drużyny", name: "name", widget: "string"}
       - {label: "Typ", name: "section", widget: "select", options: ["roster", "schedule"]}
