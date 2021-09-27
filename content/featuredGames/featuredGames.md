@@ -1,20 +1,20 @@
 ---
-homeN: Olimpia Zebrzydowice
-homeLogoN: src/images/zebrzydowice.jpg
+homeN: Sosnowianka
+homeLogoN: src/images/sosnowiankaLogo.png
 resultN: VS
-awayLogoN: src/images/sosnowiankaLogo.png
-awayN: Sosnowianka
+awayLogoN: src/images/bienkowka.jpg
+awayN: Bieńkówka
 leagueN: B klasa
-dateN: '26.09.2021'
-timeN: '16:00'
-placeN: Zebrzydowice
-homeP: Sosnowianka
-homeLogoP: src/images/sosnowiankaLogo.png
-resultP: '1:3'
-awayLogoP: src/images/skawce.png
-awayP: Spartak Skawce
+dateN: '03.10.2021'
+timeN: '15:00'
+placeN: Stanisław Dolny
+homeP: Olimpia Zebrzydowice
+homeLogoP: src/images/zebrzydowice.jpg
+resultP: '0:0'
+awayLogoP: src/images/sosnowiankaLogo.png
+awayP: Sosnowianka
 leagueP: B klasa
-dateP: '19.09.2021'
+dateP: '26.09.2021'
 timeP: '16:00'
-placeP: Stanisław Dolny 
+placeP: Zebrzydowice 
 ---

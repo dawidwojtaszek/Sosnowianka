@@ -2,7 +2,7 @@
 title: Zebrzydowice vs Sosnowianka
 home: Olimpia Zebrzydowice
 homeLogo: src/images/zebrzydowice.jpg
-result: VS
+result: '0:0'
 away: Sosnowianka
 awayLogo: src/images/sosnowiankaLogo.png
 league: B Klasa
