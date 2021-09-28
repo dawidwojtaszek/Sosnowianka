@@ -52,6 +52,7 @@ const News = ({ posts, isLast, isFirst, currentPage }) => {
         date={news.frontmatter.date}
         path={news.frontmatter.path}
         key={news.id}
+        abstract={news.frontmatter.abstract}
       />))}
 
       <Pagination>

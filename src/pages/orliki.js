@@ -25,6 +25,31 @@ const SectionTitle = styled.h3`
         font-size: 0.9rem;
     }
 `
+const Container = styled.div`
+  padding:1rem;
+  p{
+    margin-top: 1rem;
+    line-height: 2;
+  }
+  p:nth-child(even){
+    padding:0.3rem .5rem 1.2rem .5rem;
+    font-size: 1.4rem;
+  }
+  p:nth-child(odd){
+    padding:0 0.5rem ;
+    font-size: 1.1rem;
+    background-color: #CCC;
+  }
+  ul{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    list-style:none;
+    padding: 1rem;
+  }
+  li{
+    padding:.3rem;
+  }
+`
 
 const Orliki = () => {
 
@@ -45,23 +70,25 @@ query juniorTeams {
 
       `)
 
-  const list = data.allMarkdownRemark.nodes;
+  const roster = data.allMarkdownRemark.nodes.filter(element => {
+    return element.frontmatter.section === 'roster'
+  })
+  const schedule = data.allMarkdownRemark.nodes.filter(element => {
+    return element.frontmatter.section === 'schedule'
+  })
 
-  console.log(list);
 
-  const roster = data.allMarkdownRemark.nodes[0].html;
-  const schedule = data.allMarkdownRemark.nodes[1].html;
 
   return (
     <Layout>
       <Seo title="Orliki" />
       <Card >
         <SectionTitle>Kadra:</SectionTitle>
-        <div dangerouslySetInnerHTML={{ __html: roster }} />
+        <Container dangerouslySetInnerHTML={{ __html: roster[0].html }} />
       </Card>
       <Card>
         <SectionTitle>Terminarz Jesień 2021/2022</SectionTitle>
-        <div dangerouslySetInnerHTML={{ __html: schedule }} />
+        <Container dangerouslySetInnerHTML={{ __html: schedule[0].html }} />
       </Card>
     </Layout>
   )

@@ -1,5 +1,5 @@
 ---
-name: Orliki
+name: Zaki
 section: schedule
 ---
 1 KOLEJKA **📅 20.09.2021**  **⏰ 18:00**

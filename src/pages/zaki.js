@@ -2,6 +2,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import styled from "styled-components"
+import { graphql, useStaticQuery } from "gatsby"
 
 const Card = styled.div`
     background-color: white;
@@ -25,18 +26,73 @@ const SectionTitle = styled.h3`
     }
 `
 
+const Container = styled.div`
+  padding:1rem;
+  p{
+    margin-top: 1rem;
+    line-height: 2;
+  }
+  p:nth-child(even){
+    padding:0.3rem .5rem 1.2rem .5rem;
+    font-size: 1.4rem;
+  }
+  p:nth-child(odd){
+    padding:0 0.5rem ;
+    font-size: 1.1rem;
+    background-color: #CCC;
+  }
+  ul{
+    font-size: 1.3rem;
+    list-style:none;
+    padding: 1rem;
+    text-transform: uppercase;
+  }
+  li{
+    padding:.3rem;
+  }
+`
+
+
+
+
+
 const Zaki = () => {
+
+    const data = useStaticQuery(graphql`
+query zaki {
+  allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/juniorTeams/"}, frontmatter: {name: {eq: "Zaki"}}}
+  ) {
+    nodes {
+      frontmatter {
+        name
+        section
+      }
+      html
+    }
+  }
+}
+
+      `)
+
+    const roster = data.allMarkdownRemark.nodes.filter(element => {
+        return element.frontmatter.section === 'roster'
+    })
+    const schedule = data.allMarkdownRemark.nodes.filter(element => {
+        return element.frontmatter.section === 'schedule'
+    })
 
     return (
         <Layout>
             <Seo title="Żaki" />
             <Card >
                 <SectionTitle>Kadra:</SectionTitle>
+                <Container dangerouslySetInnerHTML={{ __html: roster[0].html }} />
             </Card>
             <Card>
                 <SectionTitle>Terminarz Jesień 2021/2022</SectionTitle>
+                <Container dangerouslySetInnerHTML={{ __html: schedule[0].html }} />
             </Card>
-
         </Layout>
     )
 }

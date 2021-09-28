@@ -7,7 +7,7 @@ import FeaturedGames from "../components/featuredGames/featuredGames"
 import Sponsor from "../components/sponsor/sponsor";
 import News from "../components/news/news";
 
-const IndexPage = ({ data, props, pageContext }) => {
+const IndexPage = ({ data, pageContext }) => {
 
   const { numPages, currentPage } = pageContext;
   let currentPageCorrect = currentPage;
@@ -28,33 +28,34 @@ const IndexPage = ({ data, props, pageContext }) => {
 }
 
 export const newsQuery = graphql`
-query news($limit: Int=4, $skip: Int) {
-    allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/_posts/"}}
-      sort: {fields: frontmatter___date, order: DESC}
-      limit: $limit
-      skip: $skip
-    ) {
-      nodes {
-        frontmatter {
-          layout
-          title
-          path
-          thumbnail {
-            childImageSharp {
-              gatsbyImageData(
-                placeholder: BLURRED
-                aspectRatio: 1.9
-                transformOptions: {cropFocus: CENTER}
-              )
-            }
+query news($limit: Int = 4, $skip: Int) {
+  allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/_posts/"}}
+    sort: {fields: frontmatter___date, order: DESC}
+    limit: $limit
+    skip: $skip
+  ) {
+    nodes {
+      frontmatter {
+        layout
+        title
+        path
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: BLURRED
+              aspectRatio: 1.9
+              transformOptions: {cropFocus: CENTER}
+            )
           }
-          date(formatString: "DD.MM.YYYY")
         }
-        id
+        date(formatString: "DD.MM.YYYY")
+        abstract
       }
+      id
     }
   }
+}
     `
 
 export default IndexPage

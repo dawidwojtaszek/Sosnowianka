@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import Seo from "../components/seo"
 import styled from 'styled-components'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const Card = styled.div`
       background-color: white;
@@ -17,16 +18,72 @@ const Card = styled.div`
         padding:1rem;
     }
 `
+const Article = styled.article`
+  padding: 1.8rem;
+`
+
+
+const ArticleTitle = styled.h1`
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  padding: 2rem 0 1rem 0;
+   @media (max-width: 991.98px){
+        font-size: 2rem;
+        padding: 1rem 0 1rem 0;
+    }
+
+`
+const ArticleDate = styled.p`
+  margin-bottom: 1rem;
+  font-style: italic;
+`
+const ArticleBody = styled.div`
+  padding: 1rem 0;
+  font-size: 1.4rem;
+   @media (max-width: 991.98px){
+        padding: .8rem 0;
+        font-size: 1.2rem;
+    }
+  ul{
+    list-style: none;
+    padding: 1rem 0;
+    text-transform: uppercase;
+  }
+  li{
+    padding: .4rem 0;
+    @media (max-width: 991.98px){
+      padding: .3rem 0;
+    }
+  }
+`
+const ImageBox = styled.div`
+  text-align:center;
+  width: 100%;
+`
 const NewsDetails = ({ data }) => {
-  console.log(data);
+
   const title = data.markdownRemark.frontmatter.title
+  const thumbnail = getImage(data.markdownRemark.frontmatter.thumbnail);
   return (
     <Layout>
 
       <Seo title={title} />
+
       <Card>
-        <h1>{title}</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eveniet placeat nam quis voluptatum beatae eaque culpa, ex optio a!</p>
+
+        <ImageBox>
+          <GatsbyImage image={thumbnail} alt="thumbnail" />
+        </ImageBox>
+        <Article>
+          <ArticleTitle>{title}</ArticleTitle>
+          <ArticleDate>{data.markdownRemark.frontmatter.date}</ArticleDate>
+          <ArticleBody dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+        </Article>
+
+
+
+
       </Card>
     </Layout>
   )
@@ -39,6 +96,17 @@ query newsDetails($sitePath: String) {
     frontmatter {
       path
       title
+      thumbnail {
+        childImageSharp {
+          gatsbyImageData(
+            placeholder: BLURRED
+            transformOptions: {cropFocus: CENTER}
+            aspectRatio: 1.9
+            layout: FULL_WIDTH
+          )
+        }
+      }
+      date(formatString: "DD.MM.YYYY")
     }
   }
 }

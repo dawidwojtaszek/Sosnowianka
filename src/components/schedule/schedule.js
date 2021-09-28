@@ -70,7 +70,7 @@ const Schedule = () => {
 
   `)
   const schedule = data.allMarkdownRemark.nodes;
-
+  console.log(schedule);
   return (
     <Card>
       <SectionTitle>Terminarz jesień 2021/2022</SectionTitle>

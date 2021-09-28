@@ -60,7 +60,7 @@ const ReadMoreBtn = styled.button`
         background-color:#16A17C;
     }
 `
-const NewsCard = ({ title, thumbnail, date, path }) => {
+const NewsCard = ({ title, thumbnail, date, path, abstract }) => {
 
     const newsThumbnail = getImage(thumbnail)
     return (
@@ -73,7 +73,7 @@ const NewsCard = ({ title, thumbnail, date, path }) => {
 
                 <Link to={`/news/${path}`}><ArticleTitle>{title}</ArticleTitle></Link>
                 <ArticleDate>{date}</ArticleDate>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci enim eveniet tenetur recusandae quo doloribus totam rem neque reiciendis atque.</p>
+                <p>{abstract}</p>
                 <Link to={`/news/${path}`}><ReadMoreBtn>Czytaj Więcej</ReadMoreBtn></Link>
             </Article>
 
