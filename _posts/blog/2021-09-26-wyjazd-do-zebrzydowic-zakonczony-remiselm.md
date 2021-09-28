@@ -25,7 +25,7 @@ Poniżej prezentujemy skład w jakim wystąpiła nasza drużyna:
  - **71 Sebastian Konopka** ⚽⚽(67' 56')
  - **14 Bartosz Gawron**
  - **11 Michał Babicz**
- - **19 Kamil Mamcarczyk** (50' 🟨 70' 🟥)
+ - **19 Kamil Mamcarczyk** (50' <i class="fas fa-square" style="color:yellow"></i> 70' <i class="fas fa-square" style="color:red"></i>) 
 Rezerwowi:
   - **5  Marcin Sadłoń**
  - **3 Erwin Góra**
