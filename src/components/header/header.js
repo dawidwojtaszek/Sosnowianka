@@ -34,9 +34,9 @@ const Header = ({ siteTitle, siteSubTitle }) => {
         <MobileMenu className="mobile-menu"></MobileMenu>
         <div className="navigation">
           <div className="social-icons">
-            <Link to="#"><i className="fab fa-twitter-square"></i></Link>
-            <Link to="#"><i className="fab fa-instagram"></i></Link>
-            <Link to="#"><i className="fab fa-facebook-square"></i></Link>
+            {/* <Link to="#"><i className="fab fa-twitter-square"></i></Link> */}
+            <Link to="https://www.instagram.com/kssosnowianka/"><i className="fab fa-instagram"></i></Link>
+            <Link to="https://www.facebook.com/KSSosnowianka"><i className="fab fa-facebook-square"></i></Link>
           </div>
 
           <nav>
