@@ -3,16 +3,16 @@ name: Zaki
 section: roster
 ---
   * **Robert Bołdys**
-  * **Bartosz Brózda**
-  * **Nikodem Faber**
-  * **Aleksander Filek**
+  * **Adam Filek**
   * **Jakub Górny**
   * **Sabina Juszczak**
-  * **Maksymilian Juszczak**
+  * **Franciszek Kosek**
   * **Szymon Kręcioch**
+  * **Jan Luzarowski**
+  * **Adrian Luzarowski**
   * **Alexander Maciasz**
-  * **Miłosz Rychlik**
-  * **Kacper Stawowy**
+  * **Szymon Pyrek**
   * **Mikołaj Tatka**
   * **Alicja Wysogląd**
+ 
 

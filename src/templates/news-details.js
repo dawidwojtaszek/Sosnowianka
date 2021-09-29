@@ -3,7 +3,8 @@ import React from 'react'
 import Layout from '../components/layout'
 import Seo from "../components/seo"
 import styled from 'styled-components'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import Sponsor from '../components/sponsor/sponsor'
 
 const Card = styled.div`
       background-color: white;
@@ -32,6 +33,9 @@ const ArticleTitle = styled.h1`
         font-size: 2rem;
         padding: 1rem 0 1rem 0;
     }
+    @media (max-width: 500px){
+      font-size: 1.5rem;
+    }
 
 `
 const ArticleDate = styled.p`
@@ -43,7 +47,7 @@ const ArticleBody = styled.div`
   font-size: 1.4rem;
    @media (max-width: 991.98px){
         padding: .8rem 0;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
   ul{
     list-style: none;
@@ -85,6 +89,7 @@ const NewsDetails = ({ data }) => {
 
 
       </Card>
+      <Sponsor/>
     </Layout>
   )
 }

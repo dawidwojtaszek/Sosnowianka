@@ -34,17 +34,26 @@ const Container = styled.div`
   p:nth-child(even){
     padding:0.3rem .5rem 1.2rem .5rem;
     font-size: 1.4rem;
+     @media (max-width: 991.98px){
+      font-size: 1rem;
+    }
   }
   p:nth-child(odd){
     padding:0 0.5rem ;
     font-size: 1.1rem;
     background-color: #CCC;
+     @media (max-width: 991.98px){
+      font-size: .8rem;
+    }
   }
   ul{
     font-size: 1.3rem;
     text-transform: uppercase;
     list-style:none;
     padding: 1rem;
+    @media (max-width: 991.98px){
+      font-size: .8rem;
+    }
   }
   li{
     padding:.3rem;

@@ -35,17 +35,26 @@ const Container = styled.div`
   p:nth-child(even){
     padding:0.3rem .5rem 1.2rem .5rem;
     font-size: 1.4rem;
+       @media (max-width: 991.98px){
+      font-size: 1rem;
+    }
   }
   p:nth-child(odd){
     padding:0 0.5rem ;
     font-size: 1.1rem;
     background-color: #CCC;
+     @media (max-width: 991.98px){
+      font-size: .8rem;
+    }
   }
   ul{
     font-size: 1.3rem;
     list-style:none;
     padding: 1rem;
     text-transform: uppercase;
+     @media (max-width: 991.98px){
+      font-size: .8rem;
+    }
   }
   li{
     padding:.3rem;
@@ -58,7 +67,7 @@ const Container = styled.div`
 
 const Zaki = () => {
 
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
 query zaki {
   allMarkdownRemark(
     filter: {fileAbsolutePath: {regex: "/juniorTeams/"}, frontmatter: {name: {eq: "Zaki"}}}
@@ -75,26 +84,26 @@ query zaki {
 
       `)
 
-    const roster = data.allMarkdownRemark.nodes.filter(element => {
-        return element.frontmatter.section === 'roster'
-    })
-    const schedule = data.allMarkdownRemark.nodes.filter(element => {
-        return element.frontmatter.section === 'schedule'
-    })
+  const roster = data.allMarkdownRemark.nodes.filter(element => {
+    return element.frontmatter.section === 'roster'
+  })
+  const schedule = data.allMarkdownRemark.nodes.filter(element => {
+    return element.frontmatter.section === 'schedule'
+  })
 
-    return (
-        <Layout>
-            <Seo title="Żaki" />
-            <Card >
-                <SectionTitle>Kadra:</SectionTitle>
-                <Container dangerouslySetInnerHTML={{ __html: roster[0].html }} />
-            </Card>
-            <Card>
-                <SectionTitle>Terminarz Jesień 2021/2022</SectionTitle>
-                <Container dangerouslySetInnerHTML={{ __html: schedule[0].html }} />
-            </Card>
-        </Layout>
-    )
+  return (
+    <Layout>
+      <Seo title="Żaki" />
+      <Card >
+        <SectionTitle>Kadra:</SectionTitle>
+        <Container dangerouslySetInnerHTML={{ __html: roster[0].html }} />
+      </Card>
+      <Card>
+        <SectionTitle>Terminarz Jesień 2021/2022</SectionTitle>
+        <Container dangerouslySetInnerHTML={{ __html: schedule[0].html }} />
+      </Card>
+    </Layout>
+  )
 }
 
 

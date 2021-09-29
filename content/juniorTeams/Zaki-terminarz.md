@@ -2,66 +2,66 @@
 name: Zaki
 section: schedule
 ---
-1 KOLEJKA **📅 20.09.2021**  **⏰ 18:00**
+1 KOLEJKA **📅 04.09.2021**  **⏰ 11:00**
 
 
 
-**Sosnowianka vs Borowik Bachowice**
-
-
-
-
-
-2 KOLEJKA   **📅 09.09.2021** **⏰ 17:00** 
-
-
-
-**Astra Spytkowice vs Sosnowianka**
-
-
-
-3 KOLEJKA **📅 16.09.2021** **⏰ 17:00**
-
-
-
-**Sosnowianka vs Orzeł Ryczów**
+**Wisła Brzeźnica vs Sosnowianka**
 
 
 
 
 
-4 KOLEJKA **📅 23.09.2021** **⏰ 17:00**
+2 KOLEJKA   **📅 12.09.2021** **⏰ 09:30** 
 
 
 
-**Stanisławianka vs Sosnowianka**
+**Sosnowianka vs ŚW Józef Kalwaria Zebrzydowska**
 
 
 
-
-
-5 KOLEJKA **📅 30.09.2021** **⏰ 17:00**
-
-
-
-**Sosnowianka vs Wisła Brzeźnica**
+3 KOLEJKA **📅 18.09.2021** **⏰ 14:00**
 
 
 
-
-
-6 KOLEJKA
-
-
-
-**Pauza**
+**Skawa Wadowice vs Sosnowianka**
 
 
 
 
 
-7 KOLEJKA  **📅14.10.2021** **⏰16:00**
+4 KOLEJKA **📅 26.09.2021** **⏰ 10:00**
 
 
 
-**Pobiedr Paszkówka vs Sosnowianka**
+**Podbiedr Paszkówka vs Sosnowianka**
+
+
+
+
+
+5 KOLEJKA **📅 03.10.2021** **⏰ 10:00**
+
+
+
+**Sosnowianka vs Żarek Barwałd**
+
+
+
+
+
+6 KOLEJKA **📅 17.10.2021** **⏰ 10:00**
+
+
+
+**Olimpia Zebrzydowice vs Sosnowianka**
+
+
+
+
+
+7 KOLEJKA  **📅24.10.2021** **⏰10:00**
+
+
+
+**Sosnowianka vs Błyskawica Marcówka**
