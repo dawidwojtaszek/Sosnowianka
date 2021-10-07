@@ -2,7 +2,7 @@
 title: Sosnowianka vs Bieńkówka
 home: Sosnowianka
 homeLogo: src/images/sosnowiankaLogo.png
-result: VS
+result: '5:0'
 away: Bieńkówka
 awayLogo: src/images/bienkowka.jpg
 league: B Klasa

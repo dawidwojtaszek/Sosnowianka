@@ -1,20 +1,20 @@
 ---
-homeN: Sosnowianka
-homeLogoN: src/images/sosnowiankaLogo.png
+homeN: Zryw Lanckorona
+homeLogoN: src/images/lanckorona.jpg
 resultN: VS
-awayLogoN: src/images/bienkowka.jpg
-awayN: Bieńkówka
+awayLogoN: src/images/sosnowiankaLogo.png
+awayN: Sosnowianka
 leagueN: B klasa
-dateN: '03.10.2021'
+dateN: '09.10.2021'
 timeN: '15:00'
-placeN: Stanisław Dolny
-homeP: Olimpia Zebrzydowice
-homeLogoP: src/images/zebrzydowice.jpg
-resultP: '0:0'
-awayLogoP: src/images/sosnowiankaLogo.png
-awayP: Sosnowianka
+placeN: Lanckorona
+homeP: Sosnowianka
+homeLogoP: src/images/sosnowiankaLogo.png
+resultP: '5:0'
+awayLogoP: src/images/bienkowka.jpg
+awayP: LKS Bieńkówka
 leagueP: B klasa
-dateP: '26.09.2021'
-timeP: '16:00'
-placeP: Zebrzydowice 
+dateP: '03.10.2021'
+timeP: '15:00'
+placeP: Stanisław Dolny
 ---
