@@ -1,20 +1,20 @@
 ---
-homeN: Zryw Lanckorona
-homeLogoN: src/images/lanckorona.jpg
+homeN: Sosnowianka
+homeLogoN: src/images/sosnowiankaLogo.png
 resultN: VS
-awayLogoN: src/images/sosnowiankaLogo.png
-awayN: Sosnowianka
+awayLogoN: src/images/Stronie.png
+awayN: Żarek Stronie
 leagueN: B klasa
-dateN: '09.10.2021'
+dateN: '17.10.2021'
 timeN: '15:00'
-placeN: Lanckorona
-homeP: Sosnowianka
-homeLogoP: src/images/sosnowiankaLogo.png
-resultP: '5:0'
-awayLogoP: src/images/bienkowka.jpg
-awayP: LKS Bieńkówka
+placeN: Stanisław Dolny
+homeP: Zryw Lanckorona
+homeLogoP: src/images/lanckorona.jpg
+resultP: '1:2'
+awayLogoP: src/images/sosnowiankaLogo.png
+awayP: Sosnowianka
 leagueP: B klasa
-dateP: '03.10.2021'
+dateP: '09.10.2021'
 timeP: '15:00'
-placeP: Stanisław Dolny
+placeP: Lanckorona
 ---
