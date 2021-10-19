@@ -2,7 +2,7 @@
 title: Lanckorona vs Sosnowianka
 home: Zryw Lanckorona
 homeLogo: src/images/lanckorona.jpg
-result: VS
+result: '1:2'
 away: Sosnowianka
 awayLogo: src/images/sosnowiankaLogo.png
 league: B Klasa

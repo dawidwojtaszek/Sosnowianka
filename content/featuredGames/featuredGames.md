@@ -1,20 +1,20 @@
 ---
-homeN: Sosnowianka
-homeLogoN: src/images/sosnowiankaLogo.png
+homeN: Cedron Brody
+homeLogoN: src/images/brody.jpg
 resultN: VS
-awayLogoN: src/images/Stronie.png
-awayN: Żarek Stronie
+awayLogoN: src/images/sosnowiankaLogo.png
+awayN: Sosnowianka
 leagueN: B klasa
-dateN: '17.10.2021'
+dateN: '23.10.2021'
 timeN: '15:00'
-placeN: Stanisław Dolny
-homeP: Zryw Lanckorona
-homeLogoP: src/images/lanckorona.jpg
-resultP: '1:2'
-awayLogoP: src/images/sosnowiankaLogo.png
-awayP: Sosnowianka
+placeN: Brody
+homeP: Sosnowianka
+homeLogoP: src/images/sosnowiankaLogo.png
+resultP: '3:2'
+awayLogoP: src/images/Stronie.png
+awayP: Żarek Stronie
 leagueP: B klasa
-dateP: '09.10.2021'
+dateP: '17.10.2021'
 timeP: '15:00'
-placeP: Lanckorona
+placeP: Stanisław Dolny
 ---

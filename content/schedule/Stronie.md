@@ -2,7 +2,7 @@
 title: Sosnowianka vs Stronie
 home: Sosnowianka
 homeLogo: src/images/sosnowiankaLogo.png
-result: VS
+result: '3:2'
 away: Żarek Stronie
 awayLogo: src/images/Stronie.png
 league: B Klasa
