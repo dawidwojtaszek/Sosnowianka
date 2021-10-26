@@ -2,7 +2,7 @@
 title: brod vs Sosnowianka
 home: cedron brody
 homeLogo: src/images/brody.jpg
-result: VS
+result: '0:2'
 away: Sosnowianka
 awayLogo: src/images/sosnowiankaLogo.png
 league: B Klasa

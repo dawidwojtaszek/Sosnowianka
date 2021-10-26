@@ -2,7 +2,7 @@
 layout: blog
 path: wygrywamy-z-zarkiem-stronie-3-2-19-10-2021
 title: Wygrywamy z Żarkiem Stronie 3:2
-date: 2021-10-15T17:18:24.615Z
+date: 2021-10-19T17:18:24.615Z
 thumbnail: src/images/stronie.jpeg
 abstract: W 10 kolejce B klasy pokonujemy Żarek Stronie 3:2
 ---

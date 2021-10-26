@@ -1,20 +1,20 @@
 ---
-homeN: Cedron Brody
-homeLogoN: src/images/brody.jpg
+homeN: Sosnowianka
+homeLogoN: src/images/sosnowiankaLogo.png
 resultN: VS
-awayLogoN: src/images/sosnowiankaLogo.png
-awayN: Sosnowianka
+awayLogoN: src/images/izdebnik.jpg
+awayN: Jubilat Izdebnik
 leagueN: B klasa
-dateN: '23.10.2021'
-timeN: '15:00'
-placeN: Brody
-homeP: Sosnowianka
-homeLogoP: src/images/sosnowiankaLogo.png
-resultP: '3:2'
-awayLogoP: src/images/Stronie.png
-awayP: Żarek Stronie
+dateN: '31.10.2021'
+timeN: '14:00'
+placeN: Stanisław Dolny
+homeP: Cedron Brody
+homeLogoP: src/images/brody.jpg
+resultP: '0:2'
+awayLogoP: src/images/sosnowiankaLogo.png
+awayP: Sosnowianka
 leagueP: B klasa
-dateP: '17.10.2021'
+dateP: '23.10.2021'
 timeP: '15:00'
-placeP: Stanisław Dolny
+placeP: Brody
 ---
