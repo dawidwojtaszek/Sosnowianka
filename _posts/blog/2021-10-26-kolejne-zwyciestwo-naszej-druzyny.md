@@ -17,7 +17,7 @@ Poniżej prezentujemy skład w jakim wystąpiła nasza drużyna:
  - **8 Szymon Szydłowski** (60' ⚽)
  - **10 Tomasz Kozik** 
  - **70 Sebastian Konopka** (46' <i class="fas fa-arrow-alt-circle-down" style="color:red"></i> Wojciech Żak) 
- - **11 Daniel Bosman** (60' ⚽) (90' <i class="fas fa-arrow-alt-circle-down" style="color:red"></i> Rafał Brańka) 
+ - **11 Daniel Bosman** (27' ⚽) (90' <i class="fas fa-arrow-alt-circle-down" style="color:red"></i> Rafał Brańka) 
  - **71 Wiesław Mistarz** 
  - **23 Bartosz Gawron**  (80' <i class="fas fa-arrow-alt-circle-down" style="color:red"></i> Adrian Leńczowski) 
  - **6 Mikołaj Kapuściński** 
