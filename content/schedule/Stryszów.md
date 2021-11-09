@@ -1,7 +1,7 @@
 ---
 title: Stryszów vs Sosowianka
 home: Chełm Stryszów
-homeLogo: src/images/stryszów.jpg
+homeLogo: src/images/stryszow.jpg
 result: '0:1'
 away: Sosnowianka
 awayLogo: src/images/sosnowiankaLogo.png
