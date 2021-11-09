@@ -2,7 +2,7 @@
 title: Stryszów vs Sosowianka
 home: Chełm Stryszów
 homeLogo: src/images/stryszów.jpg
-result: VS
+result: '0:1'
 away: Sosnowianka
 awayLogo: src/images/sosnowiankaLogo.png
 league: B Klasa

@@ -2,7 +2,7 @@
 title: Sosnowianka vs Izdebnik
 home: Sosnowianka
 homeLogo: src/images/sosnowiankaLogo.png
-result: VS
+result: '1:1'
 away: Jublat Izdebnik
 awayLogo: src/images/izdebnik.jpg
 league: B Klasa

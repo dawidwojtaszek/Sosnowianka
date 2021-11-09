@@ -1,20 +1,20 @@
 ---
-homeN: Sosnowianka
-homeLogoN: src/images/sosnowiankaLogo.png
+homeN: Jastrzębianka
+homeLogoN: src/images/jastrzebia.jpg
 resultN: VS
-awayLogoN: src/images/izdebnik.jpg
-awayN: Jubilat Izdebnik
+awayLogoN: src/images/sosnowiankaLogo.png
+awayN: Sosnowianka
 leagueN: B klasa
-dateN: '31.10.2021'
-timeN: '14:00'
-placeN: Stanisław Dolny
-homeP: Cedron Brody
-homeLogoP: src/images/brody.jpg
-resultP: '0:2'
+dateN: 'Marzec 2022'
+timeN: 'Brak'
+placeN: Jastrzębia
+homeP: Chełm Stryszów
+homeLogoP: src/images/stryszow.jpg
+resultP: '0:1'
 awayLogoP: src/images/sosnowiankaLogo.png
 awayP: Sosnowianka
 leagueP: B klasa
-dateP: '23.10.2021'
-timeP: '15:00'
-placeP: Brody
+dateP: '06.11.2021'
+timeP: '13:00'
+placeP: Stryszów
 ---
