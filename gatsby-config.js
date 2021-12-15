@@ -2,9 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Sosnowianka`,
     subtitle: `Stanisław Dolny`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    description: `Oficjalna strona internetowa drużyny KS Sonwowianka Stanisław Dolny. Najważniejsze informacje na temat naszego klubu.`,
+    author: `dw`,
+    siteUrl: `https://sosnowianka.pl`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
